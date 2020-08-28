@@ -1,0 +1,16 @@
+:root {
+  --brand-black: #3A3433;
+  --light-red: #F18B74;
+  --grey: #B0B0B0;
+  --brand-red: #B02000;
+  --creme: #E6DCD9;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "open-sans", sans-serif;
+}
