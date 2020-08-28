@@ -199,6 +199,14 @@ PROJECTS SECTION
   border-radius: 10px;
   overflow: hidden;
   margin: 15px;
+  background: url("../assets/img/project-default-bg.svg");
+}
+
+.project-item a {
+  background: linear-gradient(to bottom, rgba(58,52,51,0.65) 0%,rgba(58,52,51,0) 100%);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .project-item h3 {
