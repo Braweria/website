@@ -26,6 +26,10 @@ MySQL: 8.0.16
 RESETS AND NORMALISE 
 ------------------------------------------------------ */
 
+body {
+  padding-bottom: 150px;
+}
+
 *,
 *:before,
 *:after {
@@ -43,7 +47,8 @@ RESETS AND NORMALISE
   /* height: 100%; */
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
@@ -167,3 +172,46 @@ HERO SECTION
   padding-right: 650px;
 }
 
+/* ------------------------------------------------------
+PROJECTS SECTION
+------------------------------------------------------ */
+
+.project-section {
+  background: var(--brand-black);
+  padding: 90px 0;
+}
+
+.project-section h2 {
+  color: white;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.project-item {
+  width: 500px;
+  position: relative;
+  height: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.project-item h3 {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding-right: 20%;
+}
+
+.project-item img {
+  /* object-fit: cover; */
+  min-height: 100%;
+  width: auto;
+}
