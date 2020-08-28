@@ -36,7 +36,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "open-sans", sans-serif;
   color: var(--brand-black);
 }
 
@@ -49,35 +48,49 @@ body {
 
 h1,
 .h1 {
+  font-family: "open-sans", sans-serif;
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 h2 {
+  font-family: "open-sans", sans-serif;
   font-size: 40px;
   font-weight: 700;
 }
 
 h3 {
+  font-family: "open-sans", sans-serif;
   font-size: 35px;
   font-weight: 700;
 }
 
 h4 {
+  font-family: "open-sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
 }
 
 h5 {
+  font-family: "open-sans", sans-serif;
   font-size: 25px;
   font-weight: 700;
 }
 
 h6 {
+  font-family: "open-sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+span {
+  font-family: "open-sans", sans-serif;
+}
+
+p {
+  font-family: "open-sans", sans-serif;
 }
 
 /* ------------------------------------------------------
