@@ -217,9 +217,3 @@ PROJECTS SECTION
   left: 50px;
   padding-right: 20%;
 }
-
-.project-item img {
-  /* object-fit: cover; */
-  min-height: 100%;
-  width: auto;
-}
