@@ -15,12 +15,16 @@ MySQL: 8.0.16
 */
 
 :root {
-  --brand-black: #3A3433;
-  --light-red: #F18B74;
-  --grey: #B0B0B0;
-  --brand-red: #B02000;
-  --creme: #E6DCD9;
+  --brand-black: #3a3433;
+  --light-red: #f18b74;
+  --grey: #b0b0b0;
+  --brand-red: #b02000;
+  --creme: #e6dcd9;
 }
+
+/* ------------------------------------------------------
+RESETS AND NORMALISE 
+------------------------------------------------------ */
 
 *,
 *:before,
@@ -31,3 +35,58 @@ MySQL: 8.0.16
   font-family: "open-sans", sans-serif;
 }
 
+.container {
+  width: 1600px;
+  margin: auto;
+  /* border: 2px solid red; */
+  height: 100%;
+}
+
+/* ------------------------------------------------------
+HEADER NAVIGATION
+------------------------------------------------------ */
+
+.navbar {
+  background: var(--brand-black);
+  height: 90px;
+}
+
+.navbar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu,
+.logo {
+  flex: 1;
+}
+
+.navbar .menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar .menu ul a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  padding: 20px;
+}
+
+.navbar .menu ul a.active-link {
+  color: var(--light-red);
+  text-transform: uppercase;
+}
+
+.navbar .menu ul a:hover {
+  color: var(--light-red);
+}
