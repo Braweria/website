@@ -1,3 +1,19 @@
+/*!
+Theme Name: Braweria WP
+Author: Wiktoria Mielcarek
+Author URI: https://braweria.de/
+Description: Personal Braweria WP Theme
+Version: 1.0.0
+Requires at least: 5.2
+Tested up to: 5.5
+Requires PHP: 7.3.5
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: braweria
+
+MySQL: 8.0.16
+*/
+
 :root {
   --brand-black: #3A3433;
   --light-red: #F18B74;
@@ -14,3 +30,4 @@
   padding: 0;
   font-family: "open-sans", sans-serif;
 }
+
