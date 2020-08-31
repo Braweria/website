@@ -271,3 +271,44 @@ ABOUT ME SECTION
   width: 780px;
   margin: auto;
 }
+
+/* ------------------------------------------------------
+BLOG POSTS
+------------------------------------------------------ */
+
+.blog-section {
+  background: var(--brand-black);
+  padding: 90px 0;
+}
+
+.blog-section h2 {
+  color: white;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.blog-post-item {
+  background: url("../assets/img/blog-post-bg-default.svg") no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog-post-item a {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, rgba(58,52,51,0.65) 0%,rgba(58,52,51,0) 100%);
+  display: inline-block;
+  padding: 50px;
+  text-decoration: none;
+}
+
+.blog-post-item h3 {
+  color: white;
+}
