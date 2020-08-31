@@ -312,3 +312,61 @@ BLOG POSTS
 .blog-post-item h3 {
   color: white;
 }
+
+/* ------------------------------------------------------
+MY SKILLS
+------------------------------------------------------ */
+
+.my-skills {
+  background: var(--creme);
+  padding: 90px 0;
+}
+
+.my-skills h2 {
+  text-align: center;
+}
+
+.my-skills-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  }
+
+.my-skills-cell {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-skills-cell h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    width: 100%;
+    padding: 80px 40px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  /* width: 30%; */
+  text-align: center;
+}
+
+.skill-item img {
+  height: 70px;
+  width: auto;
+  margin: auto;
+}
+
+.skill-item span {
+  margin: 25px 0;
+}
