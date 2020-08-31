@@ -92,6 +92,7 @@ span {
 
 p {
   font-family: "open-sans", sans-serif;
+  padding-bottom: 15px;
 }
 
 button.primary {
