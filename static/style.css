@@ -239,7 +239,7 @@ PROJECTS SECTION
 }
 
 .project-item a {
-  background: linear-gradient(to bottom, rgba(58,52,51,0.65) 0%,rgba(58,52,51,0) 100%);
+  background: linear-gradient(to bottom, rgba(58, 52, 51, 0.65) 0%, rgba(58, 52, 51, 0) 100%);
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -286,11 +286,11 @@ BLOG POSTS
 }
 
 .blog-posts {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .blog-post-item {
@@ -303,7 +303,7 @@ BLOG POSTS
 .blog-post-item a {
   width: 100%;
   height: 500px;
-  background: linear-gradient(to bottom, rgba(58,52,51,0.65) 0%,rgba(58,52,51,0) 100%);
+  background: linear-gradient(to bottom, rgba(58, 52, 51, 0.65) 0%, rgba(58, 52, 51, 0) 100%);
   display: inline-block;
   padding: 50px;
   text-decoration: none;
@@ -332,7 +332,7 @@ MY SKILLS
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  }
+}
 
 .my-skills-cell {
   display: flex;
@@ -345,13 +345,13 @@ MY SKILLS
 }
 
 .skills-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    width: 100%;
-    padding: 80px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  width: 100%;
+  padding: 80px 40px;
 }
 
 .skill-item {
@@ -369,4 +369,71 @@ MY SKILLS
 
 .skill-item span {
   margin: 25px 0;
+}
+
+/* ------------------------------------------------------
+CONTACT FORM
+------------------------------------------------------ */
+
+.contact {
+  background: var(--light-red);
+  padding: 90px 0;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 780px;
+  margin: auto;
+}
+
+.contact form div {
+  display: flex;
+}
+
+.contact form div input {
+  margin-right: 15px;
+  padding: 15px;
+  appearance: none;
+}
+
+.contact form div input:before {
+  content: "\f0c8";
+  font-family: "font awesome 5 free";
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.contact form div input:checked:before {
+  content: "\f14a";
+  font-family: "font awesome 5 free";
+  width: 100%;
+  height: 100%;
+}
+
+.contact label {
+  text-align: left;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.contact input {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
