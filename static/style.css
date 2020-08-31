@@ -252,3 +252,21 @@ PROJECTS SECTION
   left: 50px;
   padding-right: 20%;
 }
+
+/* ------------------------------------------------------
+ABOUT ME SECTION
+------------------------------------------------------ */
+
+.about-me {
+  background: var(--light-red);
+  padding: 90px 0;
+}
+
+.about-me h2 {
+  text-align: center;
+}
+
+.about-me p {
+  width: 780px;
+  margin: auto;
+}
