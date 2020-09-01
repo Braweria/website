@@ -292,8 +292,11 @@ textarea {
   margin-bottom: 20px;
 }
 
-input::placeholder {
-  font-family: "JetBrain-Mono";
+input::placeholder,
+textarea::placeholder {
+  font-family: JetBrainsMono;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* ------------------------------------------------------
