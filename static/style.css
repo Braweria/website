@@ -39,6 +39,24 @@ body {
   color: var(--brand-black);
 }
 
+/* Block Styling */
+
+.section-block {
+  padding: 90px 0;
+}
+
+.bg-bb {
+  background: var(--brand-black);
+}
+
+.bg-lr {
+  background: var(--light-red);
+}
+
+.bg-cr {
+  background: var(--creme);
+}
+
 .container {
   width: 1600px;
   margin: auto;
@@ -119,23 +137,7 @@ button.primary i:before {
   font-size: 20px;
 }
 
-/* Block Styling */
 
-.section-block {
-  padding: 90px 0;
-}
-
-.bg-bb {
-  background: var(--brand-black);
-}
-
-.bg-lr {
-  background: var(--light-red);
-}
-
-.bg-cr {
-  background: var(--creme);
-}
 
 /* Form Styling */
 
