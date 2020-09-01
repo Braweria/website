@@ -543,3 +543,90 @@ CONTACT FORM
 .contact {
   text-align: center;
 }
+
+/* ------------------------------------------------------
+FOOTER NAVIGATION
+------------------------------------------------------ */
+
+footer {
+  padding: 65px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  margin-bottom: 60px;
+}
+
+footer span {
+  color: var(--grey);
+  font-weight: 700;
+  font-size: 20px;
+  display: inline-block;
+  width: 170px;
+  margin-bottom: 25px;
+}
+
+footer p,
+footer a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 350px;
+}
+
+.footer-content ul {
+  list-style: none;
+}
+
+.footer-content ul li {
+  margin-bottom: 10px;
+}
+
+.footer-important {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-important div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-important div img {
+ height: 30px;
+}
+
+.footer-important div span {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline;
+  margin: 0;
+}
+
+.footer-important .paw {
+  height: 20px;
+}
+
+.footer-important nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 220px;
+  list-style: none;
+}
+
+.footer-important nav ul li a {
+  width: auto;
+  margin-left: 40px;
+}
