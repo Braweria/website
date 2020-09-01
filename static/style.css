@@ -409,6 +409,7 @@ CONTACT FORM
 .contact form div input:checked:before {
   content: "\f14a";
   font-family: "font awesome 5 free";
+  font-weight: 900;
   width: 100%;
   height: 100%;
 }
