@@ -137,6 +137,70 @@ button.primary i:before {
   background: var(--creme);
 }
 
+/* Form Styling */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 780px;
+  margin: auto;
+}
+
+form .form-privacy-check {
+  display: flex;
+}
+
+form .form-privacy-check input {
+  margin-right: 15px;
+  padding: 15px;
+  appearance: none;
+}
+
+form .form-privacy-check input:before {
+  content: "\f0c8";
+  font-family: "font awesome 5 free";
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+form .form-privacy-check input:checked:before {
+  content: "\f14a";
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  text-align: left;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+input {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+input::placeholder {
+  font-family: "JetBrain-Mono";
+}
+
 /* ------------------------------------------------------
 HEADER NAVIGATION
 ------------------------------------------------------ */
@@ -381,7 +445,7 @@ CONTACT FORM
   text-align: center;
 }
 
-.contact form {
+/* .contact form {
   display: flex;
   flex-direction: column;
   width: 780px;
@@ -437,4 +501,4 @@ CONTACT FORM
   padding-left: 20px;
   font-size: 20px;
   margin-bottom: 20px;
-}
+} */
