@@ -46,6 +46,8 @@ body {
   /* height: 100%; */
 }
 
+/* Text styling */
+
 h1,
 .h1 {
   font-family: "open-sans", sans-serif;
@@ -95,6 +97,8 @@ p {
   padding-bottom: 15px;
 }
 
+/* Button Styling  */
+
 button.primary {
   background: var(--brand-black);
   padding: 10px 20px;
@@ -113,6 +117,24 @@ button.primary i:before {
   color: white;
   padding-left: 10px;
   font-size: 20px;
+}
+
+/* Block Styling */
+
+.section-block {
+  padding: 90px 0;
+}
+
+.bg-bb {
+  background: var(--brand-black);
+}
+
+.bg-lr {
+  background: var(--light-red);
+}
+
+.bg-cr {
+  background: var(--creme);
 }
 
 /* ------------------------------------------------------
@@ -212,11 +234,6 @@ HERO SECTION
 PROJECTS SECTION
 ------------------------------------------------------ */
 
-.project-section {
-  background: var(--brand-black);
-  padding: 90px 0;
-}
-
 .project-section h2 {
   color: white;
 }
@@ -258,11 +275,6 @@ PROJECTS SECTION
 ABOUT ME SECTION
 ------------------------------------------------------ */
 
-.about-me {
-  background: var(--light-red);
-  padding: 90px 0;
-}
-
 .about-me h2 {
   text-align: center;
 }
@@ -275,11 +287,6 @@ ABOUT ME SECTION
 /* ------------------------------------------------------
 BLOG POSTS
 ------------------------------------------------------ */
-
-.blog-section {
-  background: var(--brand-black);
-  padding: 90px 0;
-}
 
 .blog-section h2 {
   color: white;
@@ -316,11 +323,6 @@ BLOG POSTS
 /* ------------------------------------------------------
 MY SKILLS
 ------------------------------------------------------ */
-
-.my-skills {
-  background: var(--creme);
-  padding: 90px 0;
-}
 
 .my-skills h2 {
   text-align: center;
@@ -376,8 +378,6 @@ CONTACT FORM
 ------------------------------------------------------ */
 
 .contact {
-  background: var(--light-red);
-  padding: 90px 0;
   text-align: center;
 }
 
