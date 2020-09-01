@@ -26,10 +26,6 @@ MySQL: 8.0.16
 RESETS AND NORMALISE 
 ------------------------------------------------------ */
 
-body {
-  padding-bottom: 150px;
-}
-
 *,
 *:before,
 *:after {
@@ -603,7 +599,7 @@ footer a {
 }
 
 .footer-important div img {
- height: 30px;
+  height: 30px;
 }
 
 .footer-important div span {
