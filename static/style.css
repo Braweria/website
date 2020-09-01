@@ -220,6 +220,7 @@ button.primary {
   font-weight: 700;
   border: 4px solid var(--brand-black);
   border-radius: 10px;
+  margin: 20px 0;
 }
 
 button.primary:hover {
