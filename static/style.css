@@ -566,7 +566,7 @@ BLOG POST
 
 .feature-img {
   height: 100vh;
-  position: fixed;
+  position: sticky;
   width: 100vw;
 
   top: 0;
@@ -581,7 +581,7 @@ BLOG POST
 /* Article */
 
 .post {
-  margin-top: 60vh;
+  margin-top: -40vh;
   background: var(--creme);
   border-radius: 10px;
   padding: 65px 130px;
@@ -612,8 +612,9 @@ BLOG POST
 .comments {
   padding-top: 250px;
   margin-top: -160px;
-  z-index: -9999;
+  z-index: -1;
   text-align: center;
+  position: relative;
 }
 
 .comment-info {
