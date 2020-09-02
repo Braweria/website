@@ -38,6 +38,15 @@ body {
   margin: 0;
   padding: 0;
   color: var(--brand-black);
+  font-family: "open-sans", sans-serif;
+}
+
+*:focus {
+  appearance: none;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0 2px var(--brand-black), 0 0 0 4px white; /* var(--light-red) but with 50% opacity */
+  border-radius: 5px;
 }
 
 /* Font Faces */
