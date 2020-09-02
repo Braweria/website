@@ -636,14 +636,66 @@ main {
   margin-bottom: 55px;
 }
 
+.first-level-comment-list,
+.first-level-comment-list ul {
+  list-style: none;
+}
+
+.first-level {
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.second-level {
+  margin-left: 85px;
+}
+
 .comment-wrap {
   display: grid;
   grid-template-columns: 115px 1fr;
-  grid-template-rows: 1fr 130px;
+  grid-template-rows: 1fr auto;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  }
 
+  /* border: 2px solid red; */
+  padding: 30px 45px;
+}
+
+.author-profile {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.author-profile img {
+  width: 70px;
+  border-radius: 10px;
+}
+
+.author-comment-body {
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: left;
+}
+
+.author-comment-body p {
+
+}
+
+.author-name {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.author-date {
+  display: block;
+  margin-bottom: 45px;
+}
+
+
+.comment-reply {
+  grid-area: 2 / 2 / 3 / 3;
+  text-align: left;
+}
 
 /* ------------------------------------------------------
 CONTACT FORM
