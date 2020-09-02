@@ -26,6 +26,11 @@ MySQL: 8.0.16
 RESETS AND NORMALISE 
 ------------------------------------------------------ */
 
+body {
+  position: relative;
+  z-index: -55;
+}
+
 *,
 *:before,
 *:after {
@@ -561,6 +566,11 @@ MY SKILLS
 /* ------------------------------------------------------
 BLOG POST
 ------------------------------------------------------ */
+
+main {
+  position: relative;
+  z-index: -2;
+}
 
 /* Feature IMG */
 
