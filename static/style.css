@@ -633,7 +633,6 @@ main {
 
 .comment-info {
   font-size: 20px;
-  margin-bottom: 55px;
 }
 
 .first-level-comment-list,
@@ -657,7 +656,6 @@ main {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
-  /* border: 2px solid red; */
   padding: 30px 45px;
 }
 
