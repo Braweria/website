@@ -636,6 +636,15 @@ main {
   margin-bottom: 55px;
 }
 
+.comment-wrap {
+  display: grid;
+  grid-template-columns: 115px 1fr;
+  grid-template-rows: 1fr 130px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+
 /* ------------------------------------------------------
 CONTACT FORM
 ------------------------------------------------------ */
