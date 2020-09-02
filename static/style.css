@@ -559,7 +559,7 @@ MY SKILLS
 }
 
 /* ------------------------------------------------------
-MAIN PART of BLOG POST
+BLOG POST
 ------------------------------------------------------ */
 
 /* Feature IMG */
@@ -585,6 +585,7 @@ MAIN PART of BLOG POST
   background: var(--creme);
   border-radius: 10px;
   padding: 65px 130px;
+  z-index: 5;
 }
 
 .post-heading {
@@ -604,6 +605,14 @@ MAIN PART of BLOG POST
   font-weight: 500;
   line-height: 1.5em;
   font-size: 20px;
+}
+
+/* Comment Section */
+
+.comments {
+  padding-top: 250px;
+  margin-top: -160px;
+  z-index: -9999;
 }
 
 /* ------------------------------------------------------
