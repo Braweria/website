@@ -552,10 +552,14 @@ MY SKILLS
 MAIN PART of BLOG POST
 ------------------------------------------------------ */
 
+/* Feature IMG */
+
 .feature-img {
   height: 100vh;
   position: fixed;
   width: 100vw;
+
+  top: 0;
 
   background: url("../assets/img/blog-post-bg-default.svg") no-repeat;
   background-size: cover;
@@ -564,6 +568,14 @@ MAIN PART of BLOG POST
   z-index: -1;
 }
 
+/* Article */
+
+article.post {
+  margin-top: 60vh;
+  background: var(--creme);
+  border-radius: 10px;
+  padding: 100px 130px;
+}
 
 /* ------------------------------------------------------
 CONTACT FORM
