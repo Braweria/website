@@ -252,7 +252,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 780px;
-  margin: auto;
+  margin: 90px auto;
 }
 
 form .form-privacy-check {
