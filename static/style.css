@@ -549,6 +549,23 @@ MY SKILLS
 }
 
 /* ------------------------------------------------------
+MAIN PART of BLOG POST
+------------------------------------------------------ */
+
+.feature-img {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+
+  background: url("../assets/img/blog-post-bg-default.svg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  z-index: -1;
+}
+
+
+/* ------------------------------------------------------
 CONTACT FORM
 ------------------------------------------------------ */
 
