@@ -26,6 +26,10 @@ MySQL: 8.0.16
 RESETS AND NORMALISE 
 ------------------------------------------------------ */
 
+html {
+  font-family: "open-sans", sans-serif;
+}
+
 body {
   position: relative;
   z-index: -55;
@@ -38,7 +42,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--brand-black);
-  font-family: "open-sans", sans-serif;
+  
 }
 
 *:focus {
