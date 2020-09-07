@@ -434,23 +434,15 @@ PROJECTS SECTION
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 100px; */
 }
 
 .project-item {
-  /* width: 500px; */
-  /* position: relative; */
   height: 700px;
   border-radius: 10px;
   overflow: hidden;
-  /* margin: 15px; */
   background-image: url("../assets/img/project-default-bg.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
