@@ -803,7 +803,7 @@ MEDIA QUERRIES BREAK @ 1600 PX
 
 @media (max-width: 1700px) {
   .container {
-    width: 100vw;
+    width: 100%;
     padding: 0 50px;
   }
 
