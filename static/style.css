@@ -805,5 +805,7 @@ MEDIA QUERRIES BREAK @ 1600 PX
     padding: 0 50px;
   }
 
-  
+  .post {
+    padding: 65px 50px;
+  }
 }
