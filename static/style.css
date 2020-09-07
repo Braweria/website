@@ -807,6 +807,9 @@ footer a {
 MEDIA QUERRIES BREAK @ 1600 PX
 ------------------------ */
 
-@media (max-width: 1600px) {
-  
+@media (max-width: 1700px) {
+  .container {
+    width: 100%;
+    margin: 0 50px;
+  }
 }
