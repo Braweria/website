@@ -1039,4 +1039,47 @@ MEDIA QUERRIES BREAK @ 900 PX
   .second-level {
     margin-left: 10px;
   }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .footer-content div:nth-last-of-type(1) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-important {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-important > img {
+    display: none;
+  }
+
+  .footer-important > * {
+    margin-bottom: 10px;
+  }
+
+  .footer-important div {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-important div > img {
+    margin-right: 27px;
+  }
+
+  .footer-important nav ul {
+    justify-content: space-between;
+  }
+
+  .footer-important nav ul li a {
+    margin: 0;
+  }
 }
