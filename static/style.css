@@ -44,7 +44,6 @@ body {
   margin: 0;
   padding: 0;
   color: var(--brand-black);
-  
 }
 
 *:focus {
@@ -696,7 +695,6 @@ main {
   margin-bottom: 45px;
 }
 
-
 .comment-reply {
   grid-area: 2 / 2 / 3 / 3;
   text-align: left;
@@ -830,7 +828,6 @@ MEDIA QUERRIES BREAK @ 1200 PX
 ------------------------ */
 
 @media (max-width: 1200px) {
-
   .menu {
     flex: 3;
   }
@@ -845,5 +842,10 @@ MEDIA QUERRIES BREAK @ 1200 PX
 
   .author-comment-body p {
     margin-right: 0;
+  }
+
+  footer p,
+  footer a {
+    width: auto;
   }
 }
