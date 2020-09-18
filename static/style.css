@@ -859,6 +859,11 @@ MEDIA QUERRIES BREAK @ 900 PX
 ------------------------ */
 
 @media (max-width: 900px) {
+
+  .container {
+    padding: 0 20px;
+  }
+
   .navbar nav {
     display: block;
   }
