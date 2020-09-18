@@ -976,4 +976,8 @@ MEDIA QUERRIES BREAK @ 900 PX
   form {
     width: 100%;
   }
+
+  .comment-info {
+    text-align: left;
+  }
 }
