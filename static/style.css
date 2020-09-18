@@ -661,8 +661,8 @@ main {
 
 .comment-wrap {
   display: grid;
-  grid-template-columns: 115px 1fr;
-  grid-template-rows: 1fr auto;
+  grid-template-columns: 123px auto;
+  grid-template-rows: 123px 1fr 129px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
