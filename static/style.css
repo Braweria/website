@@ -924,4 +924,8 @@ MEDIA QUERRIES BREAK @ 900 PX
   .navbar .menu ul li:nth-child(5) {
     grid-area: 1 / 1 / 2 / 2;
   }
+
+  form {
+    width: 100%;
+  }
 }
