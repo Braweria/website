@@ -13,26 +13,26 @@
 
 <body>
   <header class="navbar">
-    <nav class="container">
+    <nav class="container" aria-label="Hauptmenü">
       <div class="logo">
         <a href="#"><img alt="Braweria Logo" src="../assets/img/Braweria-Logo-White.svg" /></a>
       </div>
       <div class="menu">
         
-        <ul>
+        <ul role="navigation">
           <li><a href="#" class="active-link">Home</a></li>
           <li><a href="#">Projekte</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Kontakt</a></li>
           <li><a href="#">GitHub Pages</a></li>
         </ul>
-        <button class="mobile-nav"><i class="fas fa-chevron-up"></i></button>
+        <button title="Hauptmenü öffnen" aria-label="Hauptmenü öffnen" class="mobile-nav"><i class="fas fa-chevron-up"></i></button>
       </div>
     </nav>
   </header>
 
   <main>
-    <div class="feature-img" style="background-image: url('../assets/img/Förster_Complimentcard2.jpg')" </div>
+    <div aria-hidden="true" class="feature-img" style="background-image: url('../assets/img/Förster_Complimentcard2.jpg')" </div>
     </div>
     <article class="container post">
       <h1 class="post-heading">Das ist ein Blog Eintrag über ein Design Thema</h1>
@@ -85,12 +85,12 @@
         takimata sanctus est.</p>
     </article>
 
-    <div class="section-block bg-lr comments">
+    <div class="section-block bg-lr comments" aria-label="Kommentare">
       <div class="container">
         <h2 class="h1">Kommentare</h2>
         <p class="comment-info">Deine E-Mail-Adresse wird nicht veröffentlich. Erforderliche Fehlder sind mit *
           markiert.</p>
-        <form>
+        <form aria-label="Kommentar verfassen">
           <label for="name"><abbr title="Erforderliche">*</abbr> Dein Name</label>
           <input type="text" id="name" name="name" required placeholder="Wiktoria" />
           <label for="email"><abbr title="Erforderliche">*</abbr> Deine E-Mail</label>
@@ -139,8 +139,8 @@
               <ul>
                 <li>
                   <div class=" second-level comment-wrap">
-                    <div class="author-profile">
-                      <img src="../assets/img/identicon-author-profile.png" alt="author profile image" />
+                    <div aria-hidden="true" class="author-profile">
+                      <img aria-hidden="true" src="../assets/img/identicon-author-profile.png" alt="author profile image" />
                     </div>
                     <div class="author-info">
                       <span class="author-name">Mähnenwölf</span>
