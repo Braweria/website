@@ -335,6 +335,10 @@ textarea::placeholder {
 HEADER NAVIGATION
 ------------------------------------------------------ */
 
+.mobile-nav {
+  display: none;
+}
+
 .navbar {
   background: var(--brand-black);
   height: 90px;
