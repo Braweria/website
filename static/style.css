@@ -831,6 +831,10 @@ MEDIA QUERRIES BREAK @ 1200 PX
 
 @media (max-width: 1200px) {
 
+  .menu {
+    flex: 3;
+  }
+
   .post {
     padding: 65px 100px;
   }
