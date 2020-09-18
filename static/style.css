@@ -678,8 +678,17 @@ main {
   border-radius: 10px;
 }
 
-.author-comment-body {
+.author-info {
   grid-area: 1 / 2 / 2 / 3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.author-comment-body {
+  grid-area: 2 / 1 / 3 / 3;
   text-align: left;
 }
 
