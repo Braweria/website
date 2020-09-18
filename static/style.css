@@ -824,3 +824,22 @@ MEDIA QUERRIES BREAK @ 1700 PX
     margin-right: 20%;
   }
 }
+
+/* ------------------------
+MEDIA QUERRIES BREAK @ 1200 PX
+------------------------ */
+
+@media (max-width: 1200px) {
+
+  .post {
+    padding: 65px 100px;
+  }
+
+  .post p {
+    margin-right: 0;
+  }
+
+  .author-comment-body p {
+    margin-right: 0;
+  }
+}
