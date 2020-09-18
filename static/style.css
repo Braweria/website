@@ -938,35 +938,35 @@ MEDIA QUERRIES BREAK @ 900 PX
   }
 
   h1,
-.h1 {
-  font-size: 30px;
-}
+  .h1 {
+    font-size: 30px;
+  }
 
-h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
 
-h3 {
-  font-size: 25px;
-  margin-bottom: 20px;
-}
+  h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
 
-h4 {
-  font-size: 23px;
-  margin-bottom: 20px;
-}
+  h4 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
 
-h5 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
+  h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 
-h6 {
-  font-size: 16px;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
+  h6 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
 
   form {
     width: 100%;
