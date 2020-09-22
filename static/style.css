@@ -1095,7 +1095,11 @@ MEDIA QUERRIES BREAK @ 900 PX
   }
 
   .skills-list {
-    padding: 40px;
+    padding: 0px;
+  }
+
+  footer {
+    margin-bottom: 70px;
   }
 
   .footer-content {
