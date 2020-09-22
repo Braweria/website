@@ -1072,6 +1072,10 @@ MEDIA QUERRIES BREAK @ 900 PX
     padding-right: 0;
   }
 
+  .about-me p {
+    width: auto;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
