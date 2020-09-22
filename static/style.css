@@ -1040,6 +1040,16 @@ MEDIA QUERRIES BREAK @ 900 PX
     margin-left: 10px;
   }
 
+  .hero span {
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    padding: 10px 0;
+    font-size: 28px;
+    
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
