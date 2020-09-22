@@ -1076,6 +1076,19 @@ MEDIA QUERRIES BREAK @ 900 PX
     width: auto;
   }
 
+  .blog-posts {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .blog-post-item {
+    height: 350px;
+  }
+
+  .blog-post-item a {
+    padding: 30px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
