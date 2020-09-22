@@ -1089,6 +1089,15 @@ MEDIA QUERRIES BREAK @ 900 PX
     padding: 30px;
   }
 
+  .my-skills-table {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    padding: 40px;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
