@@ -749,7 +749,59 @@ CONTACT FORM
 
 .contact {
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.contact > p {
+  width: 750px;
+  text-align: left;
+}
+
+.social-media {
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-channels {
+  display: grid;
+  grid-template-columns: repeat(4, 57px);
+  grid-template-rows: 57px;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  }
+
+  .social-media-channels button {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-media-channels button i {
+    display: inline-block;
+    width: 20px;
+  }
+
+  .social-media-channels button i:before {
+    padding: 0;
+  }
+
+  .social-media-channels .twitter { grid-area: 1 / 1 / 2 / 2; }
+  .social-media-channels .behance { grid-area: 1 / 2 / 2 / 3; }
+  .social-media-channels .github { grid-area: 1 / 3 / 2 / 4; }
+  .social-media-channels .reddit { grid-area: 1 / 4 / 2 / 5; }
 
 /* ------------------------------------------------------
 FOOTER NAVIGATION
@@ -1090,6 +1142,10 @@ MEDIA QUERRIES BREAK @ 900 PX
 
   .comment-info {
     text-align: left;
+  }
+
+  .contact > p {
+    width: 100%;
   }
 
   .comment-wrap {
