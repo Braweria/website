@@ -18,7 +18,7 @@
         <a href="#"><img alt="Braweria Logo" src="../assets/img/Braweria-Logo-White.svg" /></a>
       </div>
       <div class="menu">
-        
+
         <ul>
           <li><a href="#" class="active-link">Home</a></li>
           <li><a href="#">Projekte</a></li>
@@ -26,11 +26,46 @@
           <li><a href="#">Kontakt</a></li>
           <li><a href="#">GitHub Pages</a></li>
         </ul>
-        
+
       </div>
     </nav>
   </header>
 
+  <section class="section-block bg-lr">
+    <div class="container contact">
+      <h2 class="h1">Kontakt</h2>
+      <p>
+        Du hast eine Geschäftsanfrage? Schreibe mir eine E-Mail an <a
+          href="mailto:w.mielcarek@braweria.de">w.mielcarek@braweria.de</a> oder fülle das Formular unten aus!
+        Willst du mir lieber nur Hallo sagen und ein bisschen chatten? Dann schicke mir eine Private Nachricht auf
+        meinen Social Media Kanälen.
+      </p>
+      <form>
+        <label for="name" aria-label="Dein Name"><abbr title="Erforderlich">*</abbr> Dein Name</label>
+        <input name="name" id="name" type="text" placeholder="Wiktoria Mielcarek" required />
+        <label for="email" aria-label="Deine E-Mail Adresse"><abbr title="Erforderlich">*</abbr> Deine E-Mail</label>
+        <input name="email" id="email" type="email" placeholder="w.mielcarek@braweria.de" required />
+        <label for="message" aria-label="Dein Nachricht"><abbr title="Erforderlich">*</abbr> Dein Nachricht</label>
+        <textarea name="message" id="message" rows="8"
+          placeholder="Ich wollte dir nur schreiben, dass Mähnenwölfe toll sind..." required></textarea>
+        <div class="form-privacy-check">
+          <input type="checkbox" name="datenschutz" id="privacy" required>
+          <label for="privacy">Mit der Nutzung dieses Formulars erklärst du dich mit der Speicherung und Verarbeitung
+            deiner Daten durch diese Webseite einverstanden.
+            <a href="#">Klick hier um den Datenschutz zu lesen.</a></label>
+        </div>
+        <button type="submit" class="primary">Nachricht abschicken <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+    <div class="container social-media">
+      <div class="social-media-channels">
+        <button class="primary twitter"><i class="fab fa-twitter"></i></button>
+        <button class="primary behance"><i class="fab fa-behance"></i></button>
+        <button class="primary github"><i class="fab fa-github"></i></button>
+        <button class="primary reddit"><i class="fab fa-reddit-alien"></i></button>
+      </div>
+    </div>
+  </section>
 
   <div class="bg-bb">
     <nav class="navbar-mobile">
@@ -59,43 +94,43 @@
       </div>
     </nav>
   </div>
-  
-    <footer class="bg-bb">
-      <div class="container footer-content">
-        <div>
-          <span>Kleines Über Mich</span>
-          <p>Ich bin Wiktoria Mielcarek, Web Designerin und Entwicklerin!</p>
-        </div>
-        <div>
-          <span>Kontakt Informationen</span>
-          <p>Du kannst mich jederzeit erreichen. Schreibe mir einfach eine E-Mail und lass uns ins Gespräch kommen.</p>
-          <p><a href="mailto:w.mielcarake@braweria.de">w.mielcarek@braweria.de</a></p>
-        </div>
-        <div>
-          <span>Du kannst mich hier finden</span>
-          <ul>
-            <li><a href="https://twitter.com/Braweria">Twitter</a></li>
-            <li><a href="https://www.behance.net/braweria">Behance</a></li>
-            <li><a href="https://github.com/Braweria">GitHub</a></li>
-            <li><a href="https://www.reddit.com/user/braweria">Reddit</a></li>
-          </ul>
-        </div>
+
+  <footer class="bg-bb">
+    <div class="container footer-content">
+      <div>
+        <span>Kleines Über Mich</span>
+        <p>Ich bin Wiktoria Mielcarek, Web Designerin und Entwicklerin!</p>
       </div>
-      <div class="container footer-important">
-        <div>
-          <img src="../assets/img/Braweria-Logo-White.svg" alt="Braweria Logo">
-          <span>© <span class="current-year">2020</span> Wiktoria Mielcarek</span>
-        </div>
-        <img src="../assets/img/Braweria-Pfote-Weiss.svg" class="paw" alt="Pfote Icon">
-        <nav>
-          <ul>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">Datenschutz</a></li>
-          </ul>
-        </nav>
+      <div>
+        <span>Kontakt Informationen</span>
+        <p>Du kannst mich jederzeit erreichen. Schreibe mir einfach eine E-Mail und lass uns ins Gespräch kommen.</p>
+        <p><a href="mailto:w.mielcarake@braweria.de">w.mielcarek@braweria.de</a></p>
       </div>
-    </footer>
-  
-  </body>
-  
-  </html>
+      <div>
+        <span>Du kannst mich hier finden</span>
+        <ul>
+          <li><a href="https://twitter.com/Braweria">Twitter</a></li>
+          <li><a href="https://www.behance.net/braweria">Behance</a></li>
+          <li><a href="https://github.com/Braweria">GitHub</a></li>
+          <li><a href="https://www.reddit.com/user/braweria">Reddit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-important">
+      <div>
+        <img src="../assets/img/Braweria-Logo-White.svg" alt="Braweria Logo">
+        <span>© <span class="current-year">2020</span> Wiktoria Mielcarek</span>
+      </div>
+      <img src="../assets/img/Braweria-Pfote-Weiss.svg" class="paw" alt="Pfote Icon">
+      <nav>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+
+</html>
