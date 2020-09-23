@@ -363,7 +363,7 @@ textarea::placeholder {
 HEADER NAVIGATION
 ------------------------------------------------------ */
 
-.mobile-nav {
+.navbar-mobile {
   display: none;
 }
 
