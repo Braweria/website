@@ -760,6 +760,10 @@ CONTACT FORM
   text-align: left;
 }
 
+.contact>p>a {
+  font-weight: 700;
+}
+
 .social-media {
   margin: auto;
 
