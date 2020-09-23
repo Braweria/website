@@ -1269,30 +1269,6 @@ MEDIA QUERRIES BREAK @ 900 PX
     padding: 0px;
   }
 
-  .social-media-channels {
-    display: grid;
-    grid-template-columns: repeat(2, 57px);
-    grid-template-rows: repeat(2, 57px);
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-  }
-
-  .social-media-channels .twitter {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-
-  .social-media-channels .behance {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-
-  .social-media-channels .github {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-
-  .social-media-channels .reddit {
-    grid-area: 2 / 2 / 3 / 3;
-  }
-
   footer {
     margin-bottom: 70px;
   }
