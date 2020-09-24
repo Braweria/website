@@ -37,6 +37,8 @@ body {
   width: 100%;
   position: relative;
   z-index: -55;
+
+  background: var(--brand-black);
 }
 
 *,
