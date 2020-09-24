@@ -677,6 +677,10 @@ main {
   z-index: 5;
 }
 
+.post.page {
+  margin: 100px auto;
+}
+
 .post-heading {
   width: 1050px;
 }
