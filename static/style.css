@@ -1066,7 +1066,7 @@ MEDIA QUERRIES BREAK @ 900 PX
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0px;
   }
 
   .navbar-mobile .context-menu {
@@ -1075,9 +1075,13 @@ MEDIA QUERRIES BREAK @ 900 PX
     position: relative;
   }
 
-  .navbar-mobile .current-page span {
+  .navbar-mobile .current-page button {
     color: white;
     font-size: 20px;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
   }
 
   .drop-menu {
