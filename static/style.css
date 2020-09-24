@@ -1121,6 +1121,7 @@ MEDIA QUERRIES BREAK @ 900 PX
   .context-menu .context-menu-btn i:before {
     font-size: 20px;
     color: white;
+    pointer-events: none;
   }
 
   .context-menu .drop-menu {
