@@ -1286,6 +1286,14 @@ MEDIA QUERRIES BREAK @ 900 PX
     grid-template-rows: repeat(9, 1fr);
   }
 
+  .button-container-page {
+    justify-content: space-between;
+  }
+
+  .button-container-page .primary {
+    margin: 0px;
+  }
+
   .project-item {
     height: 430px;
   }
