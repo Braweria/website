@@ -472,6 +472,14 @@ PROJECTS SECTION
   grid-row-gap: 20px;
 }
 
+.projects-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
 .project-item {
   height: 700px;
   border-radius: 10px;
@@ -504,6 +512,32 @@ PROJECTS SECTION
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.button-container-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 200px;
+}
+
+.button-container-page .primary {
+  padding: 2px;
+  height: 47px;
+  width: 47px;
+
+  margin: 0 15px;
+}
+
+.button-container-page .primary i:before {
+  padding: 0;
+}
+
+.button-container-page .active {
+  background: white;
+  color: var(--brand-black);
+  pointer-events: none;
 }
 
 /* ------------------------------------------------------
