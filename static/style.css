@@ -1117,6 +1117,14 @@ MEDIA QUERRIES BREAK @ 900 PX
     background: none;
   }
 
+  .context-menu .context-menu-btn:focus,
+  .current-page button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+
   .context-menu .context-menu-btn i,
   .context-menu .context-menu-btn i:before {
     font-size: 20px;
