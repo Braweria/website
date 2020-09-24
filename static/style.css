@@ -1155,8 +1155,10 @@ MEDIA QUERRIES BREAK @ 900 PX
   }
 
   .drop-menu hr {
-    border: 1px solid var(--tinted-black);
+    border: none;
     width: 100%;
+    height: 1px;
+    background: var(--tinted-black);
   }
 
   .drop-menu.show {
