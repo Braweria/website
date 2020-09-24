@@ -1162,6 +1162,10 @@ MEDIA QUERRIES BREAK @ 900 PX
     width: 100vw;
   }
 
+  .post.page {
+    margin: 0px auto;
+  }
+
   h1,
   .h1 {
     font-size: 30px;
