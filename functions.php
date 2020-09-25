@@ -7,4 +7,6 @@ function braweria_wp_setup() {
 	wp_enqueue_script("navigation", get_theme_file_uri("/assets/js/navigation.js"), NULL, "1.0.0", true);
 };
 
+add_action("wp_enqueue_scripts", "braweria_wp_setup");
+
 ?>
