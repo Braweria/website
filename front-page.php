@@ -12,7 +12,24 @@
     <div class="container project-section">
       <h2 class="h1">Meine Projekte</h1>
         <div class="projects">
-          <div class="project-item" style="background-image: url('../assets/img/Förster_Complimentcard2.jpg')">
+          
+        <?php
+$args = array(
+  'post_type'      => 'project',
+  'posts_per_page' => 3,
+);
+$loop = new WP_Query($args);
+while ( $loop->have_posts() ) {
+  $loop->the_post();
+  ?>
+  <div>
+      <?php the_title(); ?>
+      <?php the_content(); ?>
+      
+  </div>
+<?php } ?>
+
+          <!-- <div class="project-item" style="background-image: url('../assets/img/Förster_Complimentcard2.jpg')">
             <a href="#" class="post-link">
               <h3>Mein Projekt welches ich erarbeitet habe ganz alleine!</h3>
             </a>
@@ -27,7 +44,7 @@
               <h3>Mein Projekt welches ich erarbeitet habe ganz alleine!</h3>
             </a>
           </div>
-        </div>
+        </div> -->
         <div class="button-container">
           <button class="primary" aria-label="Mehr Projekte einsehen">Mehr Projekte <i
               class="fas fa-long-arrow-alt-right"></i></button>
