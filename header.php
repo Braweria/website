@@ -1,4 +1,3 @@
-<?php
 <!DOCTYPE html>
 <html lang="de">
 
@@ -8,8 +7,8 @@
   <title>Braweria WP Theme</title>
 
   <script src="https://kit.fontawesome.com/5659311191.js" crossorigin="anonymous"></script>
-  <link href="../style.css" rel="stylesheet" type="text/css">
-  <script src="../assets/js/navigation.js" defer></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="assets/js/navigation.js" defer></script>
 
 </head>
 
@@ -32,4 +31,3 @@
       </div>
     </nav>
   </header>
-?>
