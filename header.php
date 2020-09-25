@@ -7,7 +7,7 @@
   <title>Braweria WP Theme</title>
 
   <script src="https://kit.fontawesome.com/5659311191.js" crossorigin="anonymous"></script>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="./style.css" rel="stylesheet" type="text/css">
   <script src="assets/js/navigation.js" defer></script>
 
 </head>
@@ -16,7 +16,7 @@
   <header class="navbar">
     <nav class="container">
       <div class="logo">
-        <a href="#"><img alt="Braweria Logo" src="../assets/img/Braweria-Logo-White.svg" /></a>
+        <a href="#"><img alt="Braweria Logo" src="./assets/img/Braweria-Logo-White.svg" /></a>
       </div>
       <div class="menu">
 
