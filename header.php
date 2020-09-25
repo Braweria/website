@@ -1,5 +1,4 @@
 <?php
-
 <!DOCTYPE html>
 <html lang="de">
 
@@ -33,6 +32,4 @@
       </div>
     </nav>
   </header>
-
-
 ?>
