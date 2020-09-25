@@ -1,1 +1,1 @@
-<?php function get_header(); ?>
+<?php get_header(); ?>
