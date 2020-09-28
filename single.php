@@ -23,21 +23,39 @@ if (has_post_thumbnail( $post->ID ) ): ?>
         <h2 class="h1">Kommentare</h2>
         <p class="comment-info">Deine E-Mail-Adresse wird nicht veröffentlich. Erforderliche Fehlder sind mit *
           markiert.</p>
-        <form aria-label="Kommentar verfassen">
-          <label for="name"><abbr title="Erforderliche">*</abbr> Dein Name</label>
-          <input type="text" id="name" name="name" required placeholder="Wiktoria" />
-          <label for="email"><abbr title="Erforderliche">*</abbr> Deine E-Mail</label>
-          <input type="email" id="email" name="email" required placeholder="w.mielcarek@braweria.de" />
-          <label for="comment"><abbr title="Erforderliche">*</abbr> Dein Kommentar</label>
-          <textarea type="text" id="comment" name="comment" required rows="8"
-            placeholder="Echt guter Beitrag, jedoch ..."></textarea>
-          <div class="form-privacy-check">
-            <input type="checkbox" id="save-credentials" name="save-credentials" />
-            <label for="save-credentials">Meinen Namen und E-Mail in diesem Browser speichern, bis ich wieder
-              kommentiere.</label>
-          </div>
-          <button class="primary" type="submit">Kommentar abschicken <i class="fas fa-paper-plane"></i></button>
-        </form>
+        
+          <?php
+          $args = array(
+            
+              'comment_notes_before' => '',
+
+              'submit_button' => '<button class="primary" type="submit">Kommentar abschicken <i class="fas fa-paper-plane"></i></button>',
+
+              'fields' => apply_filters( 'comment_form_default_fields', array(
+            
+                'author' =>
+                  '<label for="name"><abbr title="Erforderliche">*</abbr> Dein Name</label>
+                  <input type="text" id="name" name="name" required placeholder="Wiktoria" />',
+            
+                'email' =>
+                  '<label for="email"><abbr title="Erforderliche">*</abbr> Deine E-Mail</label>
+                  <input type="email" id="email" name="email" required placeholder="w.mielcarek@braweria.de" />',
+            
+                'cookies' => '<div class="form-privacy-check"><input type="checkbox" name="datenschutz" id="privacy" required>
+                  <label for="privacy">Speichere meinen Namen und E-Mail in diesem Browser für das nächste mal wenn ich kommentiere.</label></div>',
+              ),
+
+              
+            ),
+
+            'comment_field' => '<label for="comment"><abbr title="Erforderliche">*</abbr> Dein Kommentar</label><textarea type="text" id="comment" name="comment" required rows="8"
+              placeholder="Echt guter Beitrag, jedoch ..."></textarea>',
+
+              'title_reply' => ""
+          );
+          ?>
+          <?php comment_form($args); ?>
+          
 
         <section class="comment-list">
           <ol class="first-level-comment-list">
