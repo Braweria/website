@@ -21,30 +21,20 @@ $args = array(
 $loop = new WP_Query($args);
 while ( $loop->have_posts() ) {
   $loop->the_post();
-  ?>
-  <div>
-      <?php the_title(); ?>
-      <?php the_content(); ?>
-      
-  </div>
-<?php } ?>
 
-          <!-- <div class="project-item" style="background-image: url('../assets/img/Förster_Complimentcard2.jpg')">
-            <a href="#" class="post-link">
-              <h3>Mein Projekt welches ich erarbeitet habe ganz alleine!</h3>
+  if (has_post_thumbnail( $post->ID ) ): ?>
+    <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
+          <div class="project-item" style="background-image: url('<?php echo $image[0]; ?>')">
+            <a href="<?php the_permalink(); ?>" class="post-link">
+              <h3><?php the_title(); ?></h3>
             </a>
           </div>
-          <div class="project-item">
-            <a href="#" class="post-link">
-              <h3>Mein Projekt welches ich erarbeitet habe ganz alleine!</h3>
-            </a>
-          </div>
-          <div class="project-item" style="background-image: url('../assets/img/Förster_Complimentcard2.jpg')">
-            <a href="#" class="post-link">
-              <h3>Mein Projekt welches ich erarbeitet habe ganz alleine!</h3>
-            </a>
-          </div>
-        </div> -->
+          <?php 
+        endif;
+        } 
+        ?>
+          
+        </div>
         <div class="button-container">
           <button class="primary" aria-label="Mehr Projekte einsehen">Mehr Projekte <i
               class="fas fa-long-arrow-alt-right"></i></button>
