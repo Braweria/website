@@ -168,22 +168,7 @@ while ( $loop->have_posts() ) {
   <section class="section-block bg-lr">
     <div class="container contact">
       <h2 class="h1">Kontakt</h2>
-      <form>
-        <label for="name" aria-label="Dein Name"><abbr title="Erforderlich">*</abbr> Dein Name</label>
-        <input name="name" id="name" type="text" placeholder="Wiktoria Mielcarek" required />
-        <label for="email" aria-label="Deine E-Mail Adresse"><abbr title="Erforderlich">*</abbr> Deine E-Mail</label>
-        <input name="email" id="email" type="email" placeholder="w.mielcarek@braweria.de" required />
-        <label for="message" aria-label="Dein Nachricht"><abbr title="Erforderlich">*</abbr> Dein Nachricht</label>
-        <textarea name="message" id="message" rows="8"
-          placeholder="Ich wollte dir nur schreiben, dass Mähnenwölfe toll sind..." required></textarea>
-        <div class="form-privacy-check">
-          <input type="checkbox" name="datenschutz" id="privacy" required>
-          <label for="privacy">Mit der Nutzung dieses Formulars erklärst du dich mit der Speicherung und Verarbeitung
-            deiner Daten durch diese Webseite einverstanden.
-            <a href="#">Klick hier um den Datenschutz zu lesen.</a></label>
-        </div>
-        <button type="submit" class="primary">Nachricht abschicken <i class="fas fa-paper-plane"></i></button>
-      </form>
+      <?php echo do_shortcode('[contact-form-7 id="52" title="kontakt-frontpage"]'); ?>
     </div>
   </section>
 
