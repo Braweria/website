@@ -25,41 +25,27 @@ if (has_post_thumbnail( $post->ID ) ): ?>
           markiert.</p>
         
           <?php
-          $args = array(
+            $args = array(
+              'style' => 'ol',
+              'per_page' => 10,
+              'avatar_size' => 70,
+              'echo' => true
+            ); ?>
+
+          <?php
+              if (comments_open() ):
+                comments_template('/template-parts/comments.php');
+
+              endif;
+           ?>
+
+        
             
-              'comment_notes_before' => '',
-
-              'submit_button' => '<button class="primary" type="submit">Kommentar abschicken <i class="fas fa-paper-plane"></i></button>',
-
-              'fields' => apply_filters( 'comment_form_default_fields', array(
             
-                'author' =>
-                  '<label for="name"><abbr title="Erforderliche">*</abbr> Dein Name</label>
-                  <input type="text" id="name" name="name" required placeholder="Wiktoria" />',
-            
-                'email' =>
-                  '<label for="email"><abbr title="Erforderliche">*</abbr> Deine E-Mail</label>
-                  <input type="email" id="email" name="email" required placeholder="w.mielcarek@braweria.de" />',
-            
-                'cookies' => '<div class="form-privacy-check"><input type="checkbox" name="datenschutz" id="privacy" required>
-                  <label for="privacy">Speichere meinen Namen und E-Mail in diesem Browser für das nächste mal wenn ich kommentiere.</label></div>',
-              ),
-
-              
-            ),
-
-            'comment_field' => '<label for="comment"><abbr title="Erforderliche">*</abbr> Dein Kommentar</label><textarea type="text" id="comment" name="comment" required rows="8"
-              placeholder="Echt guter Beitrag, jedoch ..."></textarea>',
-
-              'title_reply' => ""
-          );
-          ?>
-          <?php comment_form($args); ?>
+          <section class="comment-list">
+            <ol class="first-level-comment-list">
           
-
-        <section class="comment-list">
-          <ol class="first-level-comment-list">
-            <li>
+            <!-- <li>
               <div class="first-level comment-wrap bg-cr">
                 <div class="author-profile">
                   <img src="../assets/img/identicon-author-profile.png" alt="author profile image" />
@@ -114,7 +100,7 @@ if (has_post_thumbnail( $post->ID ) ): ?>
                   </div>
                 </li>
               </ul>
-            </li>
+            </li> -->
           </ol>
         </section>
       </div>
