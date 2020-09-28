@@ -301,7 +301,8 @@ form {
   margin: 90px auto;
 }
 
-form.wpcf7-form > p {
+form.wpcf7-form > p,
+form > p {
   width: 780px;
   text-align: left;
   margin: 10px 0;
@@ -737,7 +738,8 @@ main {
   position: relative;
 }
 
-.comment-info {
+.comment-info,
+.comments-notes {
   font-size: 20px;
 }
 
