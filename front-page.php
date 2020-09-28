@@ -57,17 +57,29 @@ while ( $loop->have_posts() ) {
     <div class="container blog-section">
       <h2 class="h1">Blog Beiträge</h2>
       <div class="blog-posts">
-        <div class="blog-post-item">
-          <a href="#">
-            <h3>Ein Blogbeitrag den ich geschrieben habe.</h3>
-          </a>
-        </div>
 
-        <div class="blog-post-item" style="background-image: url('../assets/img/Förster_Complimentcard2.jpg')">
-          <a href="#">
-            <h3>Ein Blogbeitrag den ich geschrieben habe.</h3>
+      <?php
+$args = array(
+  'post_type'      => 'post',
+  'posts_per_page' => 2,
+);
+$loop = new WP_Query($args);
+while ( $loop->have_posts() ) {
+  $loop->the_post();
+
+  if (has_post_thumbnail( $post->ID ) ): ?>
+  <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
+        <div class="blog-post-item" style="background-image: url('<?php echo $image[0]; ?>')">
+          <a href="<?php the_permalink(); ?>">
+            <h3><?php the_title(); ?></h3>
           </a>
         </div>
+        <?php 
+        endif;
+        } 
+        ?>
+
+
       </div>
       <div class="button-container">
         <button class="primary">Mehr Blog Beiträge <i class="fas fa-long-arrow-alt-right"></i></button>
