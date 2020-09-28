@@ -19,6 +19,7 @@ function braweria_wp_init(){
 
 add_action( 'after_setup_theme', 'braweria_wp_init' );
 
+
 function default_post_metadata__thumbnail_id( $value, $object_id, $meta_key, $single, $meta_type )
 {
   if ( '_thumbnail_id' == $meta_key )
