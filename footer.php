@@ -13,11 +13,11 @@
       <div class="context-menu">
         <button id="open-context-menu" aria-expanded="false" aria-label="open-context-menu" class="context-menu-btn"><i class="fas fa-ellipsis-v"></i></button>
         <ul class="drop-menu" id="context-menu">
-          <li><a href="#">E-Mail schreiben</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Behance</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Reddit</a></li>
+          <li><a href="mailto:w.mielcarek@braweria.de">E-Mail schreiben</a></li>
+          <li><a href="https://twitter.com/Braweria">Twitter</a></li>
+          <li><a href="https://www.behance.net/braweria">Behance</a></li>
+          <li><a href="https://github.com/Braweria">GitHub</a></li>
+          <li><a href="https://www.reddit.com/user/braweria">Reddit</a></li>
           <hr>
           <li><a href="#">Datenschutz</a></li>
           <li><a href="#">Impressum</a></li>
@@ -30,7 +30,7 @@
     <div class="container footer-content">
       <div>
         <span>Kleines Über Mich</span>
-        <p>Ich bin Wiktoria Mielcarek, Web Designerin und Entwicklerin!</p>
+        <p>Hey 👋 Mein Name ist Wiktoria und ich bin Web Designerin & Entwicklerin, darauf fokussiert das Web barrierefrei zu gestalten!</p>
       </div>
       <div>
         <span>Kontakt Informationen</span>
@@ -49,10 +49,11 @@
     </div>
     <div class="container footer-important">
       <div>
-        <img src="../assets/img/Braweria-Logo-White.svg" alt="Braweria Logo">
+      <?php $upload_dir = wp_upload_dir(); ?>
+        <img src="<?php echo $upload_dir['baseurl']; ?>/Braweria-Logo-White.svg" alt="Braweria Logo">
         <span>© <span class="current-year">2020</span> Wiktoria Mielcarek</span>
       </div>
-      <img src="../assets/img/Braweria-Pfote-Weiss.svg" class="paw" alt="Pfote Icon">
+      <img src="<?php echo $upload_dir['baseurl']; ?>/Braweria-Pfote-Weiss.svg" class="paw" alt="Pfote Icon">
       <nav>
         <ul>
           <li><a href="#">Impressum</a></li>
