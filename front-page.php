@@ -2,9 +2,9 @@
 
 <div class="hero">
     <div class="container">
-      <span>Moin, ich bin Wiktoria Mielcarek.</span>
+      <span>Moin, ich bin Wiktoria!</span>
       <h1>Ich erstelle Webseiten die von allen benutzt werden kann.</h1>
-      <span>Web Designer und Entwickler.</span>
+      <span>Web Designer & Entwickler.</span>
     </div>
   </div>
 
