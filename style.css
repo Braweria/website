@@ -359,13 +359,23 @@ input {
   width: 100%;
 }
 
+form.wpcf7-form textarea,
 textarea {
   border-radius: 5px;
   border: none;
   padding: 20px;
   font-size: 20px;
   margin-bottom: 20px;
+  margin-top: 10px;
   font-family: "open-sans", sans-serif;
+  width: 100%;
+}
+
+form .form-privacy-check input {
+  margin-right: 15px;
+  padding: 15px;
+  appearance: none;
+  width: auto;
 }
 
 input::placeholder,
@@ -373,6 +383,10 @@ textarea::placeholder {
   font-family: JetBrainsMono;
   font-weight: 400;
   font-style: italic;
+}
+
+form button {
+  width: 100%;
 }
 
 /* ------------------------------------------------------
