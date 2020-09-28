@@ -95,15 +95,16 @@ while ( $loop->have_posts() ) {
           <h3>Sprachen</h3>
           <div class="skills-list">
             <div class="skill-item">
-              <img src="../assets/img/html5.svg" alt="HTML5 Logo">
+            <?php $upload_dir = wp_upload_dir(); ?>
+            <img src="<?php echo $upload_dir['baseurl']; ?>/HTML5.svg" alt="HTML5 Logo">
               <span>HTML5</span>
             </div>
             <div class="skill-item">
-              <img src="../assets/img/css3.svg" alt="CSS Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/CSS.svg" alt="CSS Logo">
               <span>CSS</span>
             </div>
             <div class="skill-item">
-              <img src="../assets/img/javascript.svg" alt="JavaScript Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/JavaScript.svg" alt="JavaScript Logo">
               <span>JavaScript</span>
             </div>
           </div>
@@ -113,19 +114,19 @@ while ( $loop->have_posts() ) {
           <h3>Frameworks & Libraries</h3>
           <div class="skills-list">
             <div class="skill-item">
-              <img src="../assets/img/react.svg" alt="React Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/React.svg" alt="React Logo">
               <span>React</span>
             </div>
             <div class="skill-item">
-              <img src="../assets/img/WordPress.svg" alt="WordPress Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/WordPress.svg" alt="WordPress Logo">
               <span>WordPress</span>
             </div>
             <div class="skill-item">
-              <img src="../assets/img/bootstrap-4.svg" alt="Bootstrap Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/Bootstrap4.svg" alt="Bootstrap Logo">
               <span>Bootstrap</span>
             </div>
             <div class="skill-item">
-              <img src="../assets/img/jQuery.svg" alt="jQuery Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/jQuery.svg" alt="jQuery Logo">
               <span>jQuery</span>
             </div>
           </div>
@@ -135,27 +136,27 @@ while ( $loop->have_posts() ) {
           <h3>Weitere Tools</h3>
           <div class="skills-list">
             <div class="skill-item">
-              <img src="../assets/img/Adobe_XD_CC_icon.svg" alt="Adobe XD Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/Adobe-XD-CC.svg" alt="Adobe XD Logo">
               <span>Adobe XD</span>
             </div>
             <div class="skill-item">
-              <img src="../assets/img/Adobe_Illustrator_CC_icon.svg" alt="Adobe Illustrator Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/Adobe-Illustrator-CC.svg" alt="Adobe Illustrator Logo">
               <span>Illustrator</span>
             </div>
             <div class="skill-item">
-              <img src="../assets/img/Adobe_Photoshop_CC_icon.svg" alt="Adobe Photoshop Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/Adobe-Photoshop-CC.svg" alt="Adobe Photoshop Logo">
               <span>Photoshop</span>
             </div>
             <div class="skill-item">
-              <img src="../assets/img/Git.svg" alt="Git Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/Git.svg" alt="Git Logo">
               <span>Git</span>
             </div>
             <div class="skill-item">
-              <img src="../assets/img/GitHub.svg" alt="GitHub Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/GitHub.svg" alt="GitHub Logo">
               <span>GitHub</span>
             </div>
             <div class="skill-item">
-              <img src="../assets/img/VScode.svg" alt="VS Code Logo">
+              <img src="<?php echo $upload_dir['baseurl']; ?>/VScode.svg" alt="VS Code Logo">
               <span>VS Code</span>
             </div>
           </div>
