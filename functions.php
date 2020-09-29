@@ -29,4 +29,12 @@ function default_post_metadata__thumbnail_id( $value, $object_id, $meta_key, $si
 
 add_filter( 'default_post_metadata', 'default_post_metadata__thumbnail_id', 10, 5 );
 
+
+function braweria_wp_comment_pagination() {
+ // if (get_comment_pages_count() > 1 && get_option( "page_comments" )): 
+    require(get_template_directory(  ) . "/template-parts/comment-pagination.php" );
+  //endif;
+}
+
+
 ?>
