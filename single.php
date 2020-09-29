@@ -18,19 +18,13 @@ if (has_post_thumbnail( $post->ID ) ): ?>
         ?>
     </article>
 
-    <div class="section-block bg-lr comments" aria-label="Kommentare">
+    <!-- <div class="section-block bg-lr comments" aria-label="Kommentare">
       <div class="container">
         <h2 class="h1">Kommentare</h2>
         <p class="comment-info">Deine E-Mail-Adresse wird nicht veröffentlich. Erforderliche Fehlder sind mit *
-          markiert.</p>
+          markiert.</p>-->
         
-          <?php
-            $args = array(
-              'style' => 'ol',
-              'per_page' => 10,
-              'avatar_size' => 70,
-              'echo' => true
-            ); ?>
+          
 
           <?php
               if (comments_open() ):
@@ -42,10 +36,10 @@ if (has_post_thumbnail( $post->ID ) ): ?>
         
             
             
-          <section class="comment-list">
+          <!--<section class="comment-list">
             <ol class="first-level-comment-list">
           
-            <!-- <li>
+             <li>
               <div class="first-level comment-wrap bg-cr">
                 <div class="author-profile">
                   <img src="../assets/img/identicon-author-profile.png" alt="author profile image" />
@@ -100,11 +94,11 @@ if (has_post_thumbnail( $post->ID ) ): ?>
                   </div>
                 </li>
               </ul>
-            </li> -->
+            </li> 
           </ol>
         </section>
       </div>
-    </div>
+    </div> -->
   </main>
 
 <?php get_footer(); ?>
