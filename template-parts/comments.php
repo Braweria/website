@@ -56,7 +56,7 @@ if (post_password_required(  ) ) {
             "type"                => "all",
             "reply_text"          => "Antworten",
             "page"                => "",
-            "per_page"            => "1",
+            "per_page"            => "",
             "avatar_size"         => 70,
             "reverse_top_level"   => true,
             "reverse_children"    => "",
@@ -68,6 +68,9 @@ if (post_password_required(  ) ) {
           wp_list_comments( $args);
         ?>
       </ol>
+
+      <?php braweria_wp_comment_pagination(); ?>
+
 <?php
   if (!comments_open() && get_comments_number()):
 ?>
@@ -78,21 +81,7 @@ if (post_password_required(  ) ) {
   endif;
 
 ?>
-      <?php if (get_comment_pages_count() > 1 && get_option( "page_comments" )): ?>
-
-        <div class="button-container-page" role="navigation">
-        <p><?php previous_comments_link( esc_html__("Vorherige Kommentar Seite", "Braweria WP") ) ?></p>
-          <p><?php next_comments_link( esc_html__("Nächste Kommentar Seite", "Braweria WP") ) ?></p>
-          <button class="primary" aria-label="vorherige Seite"><i class="fas fa-chevron-left"></i></button>
-          <button class="primary" aria-label="Seite wechseln">1</button>
-          <button class="primary" aria-label="Seite wechseln">2</button>
-          <button class="primary active" aria-label="Seite wechseln">3</button>
-          <button class="primary" aria-label="Seite wechseln">4</button>
-          <button class="primary" aria-label="Seite wechseln">5</button>
-          <button class="primary" aria-label="Nächste Seite"><i class="fas fa-chevron-right"></i></button>
-        </div>
-
-      <?php endif; ?>
+      
       
     </section>
   </div>
