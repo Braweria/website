@@ -48,12 +48,21 @@ if (post_password_required(  ) ) {
         <?php 
 
           $args = array(
-            "walker"          => null,
-            "max_depth"       => 2,
-            "style"           => "ol",
-            "callback"        => null,
-            "end-callback"    => null,
-            ""
+            "walker"              => null,
+            "max_depth"           => 2,
+            "style"               => "ol",
+            "callback"            => null,
+            "end-callback"        => null,
+            "type"                => "all",
+            "reply_text"          => "Antworten",
+            "page"                => "",
+            "per_page"            => "1",
+            "avatar_size"         => 70,
+            "reverse_top_level"   => true,
+            "reverse_children"    => "",
+            "format"              => "",
+            "short_ping"          => false,
+            "echo"                => true
           );
 
           wp_list_comments( $args);
