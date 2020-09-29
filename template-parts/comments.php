@@ -18,7 +18,7 @@ if (post_password_required(  ) ) {
       array(
         'author' =>
           '<label for="name"><abbr title="Erforderliche">*</abbr> Dein Name</label>
-          <input type="text" id="name" name="name" required placeholder="Wiktoria" />',
+          <input type="text" id="author" name="author" required placeholder="Wiktoria" />',
               
         'email' =>
           '<label for="email"><abbr title="Erforderliche">*</abbr> Deine E-Mail</label>
