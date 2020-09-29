@@ -76,9 +76,26 @@ if (post_password_required(  ) ) {
 
 <?php
   endif;
+
 ?>
-      
+      <?php if (get_comment_pages_count() > 1 && get_option( "page_comments" )): ?>
+
+        <div class="button-container-page" role="navigation">
+        <p><?php previous_comments_link( esc_html__("Vorherige Kommentar Seite", "Braweria WP") ) ?></p>
+          <p><?php next_comments_link( esc_html__("Nächste Kommentar Seite", "Braweria WP") ) ?></p>
+          <button class="primary" aria-label="vorherige Seite"><i class="fas fa-chevron-left"></i></button>
+          <button class="primary" aria-label="Seite wechseln">1</button>
+          <button class="primary" aria-label="Seite wechseln">2</button>
+          <button class="primary active" aria-label="Seite wechseln">3</button>
+          <button class="primary" aria-label="Seite wechseln">4</button>
+          <button class="primary" aria-label="Seite wechseln">5</button>
+          <button class="primary" aria-label="Nächste Seite"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+      <?php endif; ?>
       
     </section>
   </div>
 </div>
+
+<?php endif; ?>
