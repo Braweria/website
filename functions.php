@@ -10,14 +10,14 @@ function braweria_wp_setup() {
 add_action("wp_enqueue_scripts", "braweria_wp_setup");
 
 
-function braweria_wp_init(){
+function braweria_wp_theme_support(){
   add_theme_support("post-thumbnails");
   add_theme_support( "title-tag");
   add_theme_support( 'html5',
     array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 }
 
-add_action( 'after_setup_theme', 'braweria_wp_init' );
+add_action( 'after_setup_theme', 'braweria_wp_theme_support' );
 
 
 function default_post_metadata__thumbnail_id( $value, $object_id, $meta_key, $single, $meta_type )
