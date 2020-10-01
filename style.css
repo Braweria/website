@@ -1188,6 +1188,10 @@ MEDIA QUERRIES BREAK @ 1200 PX
   footer a {
     width: auto;
   }
+
+  .comment-pagination a {
+    flex: 1;
+  }
 }
 
 /* ------------------------
