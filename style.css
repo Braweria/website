@@ -1398,7 +1398,9 @@ MEDIA QUERRIES BREAK @ 900 PX
     font-weight: 700;
   }
 
-  form {
+  div.wpcf7,
+  form,
+  div.wpcf7 p {
     width: 100%;
   }
 
