@@ -918,6 +918,10 @@ main {
   text-align: left;
 }
 
+.comment-list > div {
+  margin-top: 50px;
+}
+
 .comment-list > div .fas.fa-chevron-left:before {
   padding: 0 10px 0 0;
 }
