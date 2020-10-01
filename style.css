@@ -913,6 +913,10 @@ main {
   text-align: left;
 }
 
+.comment-list > div .fas.fa-chevron-left:before {
+  padding: 0 10px 0 0;
+}
+
 /* ------------------------------------------------------
 CONTACT FORM
 ------------------------------------------------------ */
