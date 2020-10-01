@@ -1416,7 +1416,18 @@ MEDIA QUERRIES BREAK @ 900 PX
     width: 100%;
   }
 
-  
+  .reply {
+    width: 100%;
+  }
+
+  .comment-pagination {
+    flex-direction: column;
+  }
+
+  .reply a,
+  .comment-pagination a {
+    width: 100%;
+  }
 
   .hero {
     background-position: center;
