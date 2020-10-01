@@ -787,6 +787,7 @@ main {
 .depth-1 > ol {
   margin-left: 150px;
   list-style: none;
+  margin-top: -80px;
 }
 
 .comment-author {
