@@ -1119,6 +1119,18 @@ MEDIA QUERRIES BREAK @ 1700 PX
   }
 }
 
+.four-oh-four {
+  text-align: center;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-top: 80px;
+}
+
 /* ------------------------
 MEDIA QUERRIES BREAK @ 1200 PX
 ------------------------ */
