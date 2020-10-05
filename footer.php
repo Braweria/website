@@ -45,12 +45,16 @@
       </div>
       <div>
         <span>Du kannst mich hier finden</span>
-        <ul>
-          <li><a href="https://twitter.com/Braweria">Twitter</a></li>
-          <li><a href="https://www.behance.net/braweria">Behance</a></li>
-          <li><a href="https://github.com/Braweria">GitHub</a></li>
-          <li><a href="https://www.reddit.com/user/braweria">Reddit</a></li>
-        </ul>
+
+        <?php
+          wp_nav_menu(
+            array(
+              'theme_location'  => 'social-menu',
+              'container'       => ''
+            )
+          );
+        ?>
+
       </div>
     </div>
     <div class="container footer-important">
