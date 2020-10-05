@@ -1460,6 +1460,12 @@ MEDIA QUERRIES BREAK @ 900 PX
 
   .comment-author {
     grid-area: 1 / 1 / 2 / 2;
+    text-align: left;
+  }
+
+  .comment-author img {
+    width: 50px;
+    height: 50px;
   }
 
   .comment-meta {
@@ -1474,6 +1480,10 @@ MEDIA QUERRIES BREAK @ 900 PX
 
 .comment-content {
   grid-area: 4 / 1 / 5 / 2;
+}
+
+.depth-1 > ol {
+  margin-left: 0px;
 }
 
 .reply { grid-area: 5 / 1 / 6 / 2; }
