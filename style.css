@@ -553,19 +553,41 @@ PROJECTS SECTION
   height: 200px;
 }
 
-.button-container-page .primary {
+.button-container-page .page-numbers {
   padding: 2px;
   height: 47px;
   width: 47px;
 
   margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  background: var(--brand-black);
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border: 4px solid var(--brand-black);
+  border-radius: 10px;
 }
 
-.button-container-page .primary i:before {
-  padding: 0;
+.button-container-page .prev.page-numbers,
+.button-container-page .next.page-numbers {
+  width: auto;
 }
 
-.button-container-page .active {
+.button-container-page .page-numbers:hover {
+  border: 4px solid white;
+}
+
+.button-container-page .page-numbers.dots:hover {
+  border: none;
+}
+
+.button-container-page .page-numbers.current {
   background: white;
   color: var(--brand-black);
   pointer-events: none;
