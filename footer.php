@@ -50,7 +50,8 @@
           wp_nav_menu(
             array(
               'theme_location'  => 'social-menu',
-              'container'       => ''
+              'container'       => '',
+              'menu_class'      => ''
             )
           );
         ?>
@@ -69,7 +70,8 @@
           wp_nav_menu(
             array(
               'theme_location'  => 'footer-menu',
-              'container'       => 'nav'
+              'container'       => 'nav',
+              'menu_class'      => ''
             )
           );
         ?>
