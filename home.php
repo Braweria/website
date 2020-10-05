@@ -8,7 +8,7 @@
       <?php
 $args = array(
   'post_type'      => 'post',
-  'posts_per_page' => 9,
+  'posts_per_page' => '',
 );
 $loop = new WP_Query($args);
 while ( $loop->have_posts() ) {
@@ -22,22 +22,35 @@ while ( $loop->have_posts() ) {
           </a>
         </div>
         <?php 
-        endif;
-        } 
+       
+          endif;
+        
         ?>
+        
 
         </div>
         
       </div>
+      
         <div class="button-container-page">
-          <button class="primary" aria-label="vorherige Seite"><i class="fas fa-chevron-left"></i></button>
-          <button class="primary" aria-label="Seite wechseln">1</button>
-          <button class="primary" aria-label="Seite wechseln">2</button>
-          <button class="primary active" aria-label="Seite wechseln">3</button>
-          <button class="primary" aria-label="Seite wechseln">4</button>
-          <button class="primary" aria-label="Seite wechseln">5</button>
-          <button class="primary" aria-label="Nächste Seite"><i class="fas fa-chevron-right"></i></button>
+
+        <?php
+
+          $args = array(
+            'prev_text'   => "Vorherige Seite",
+            'next_text'   => "Nächste Seite"
+          );
+
+          echo paginate_links( $args );
+
+          ?>
+
+        <?php
+          } 
+        ?>
+
         </div>
+      
     </div>
   </section>
 
