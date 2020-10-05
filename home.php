@@ -6,52 +6,46 @@
       <div class="blog-posts page">
           
       <?php
-$args = array(
-  'post_type'      => 'post',
-  'posts_per_page' => '',
-);
-$loop = new WP_Query($args);
-while ( $loop->have_posts() ) {
-  $loop->the_post();
 
-  if (has_post_thumbnail( $post->ID ) ): ?>
-  <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
-        <div class="blog-post-item" style="background-image: url('<?php echo $image[0]; ?>')">
-          <a href="<?php the_permalink(); ?>">
-            <h3><?php the_title(); ?></h3>
-          </a>
-        </div>
-        <?php 
-       
-          endif;
-        
-        ?>
-        
+        $currentPage = get_query_var( 'paged' );
 
-        </div>
-        
-      </div>
-      
-        <div class="button-container-page">
+        $args = array(
+          'post_type'      => 'post',
+          'paged'          => $currentPage
+        );
 
-        <?php
+        $wp_query = new WP_Query($args);
 
-          $args = array(
-            'prev_text'   => "Vorherige Seite",
-            'next_text'   => "Nächste Seite"
+        while ( $wp_query->have_posts() ) {
+          $wp_query->the_post();
+
+          if (has_post_thumbnail( $post->ID ) ):
+
+            $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
+
+              <div class="blog-post-item" style="background-image: url('<?php echo $image[0]; ?>')">
+                <a href="<?php the_permalink(); ?>">
+                  <h3><?php the_title(); ?></h3>
+                </a>
+              </div> <!-- end of .blog-post-item -->
+
+              <?php 
+                endif;
+              } // endwhile
+              ?>
+    </div> <!-- end of .blog-posts .page -->
+
+    <div class="button-container-page">
+      <?php
+        $args = array(
+          'prev_text'   => "Vorherige Seite",
+          'next_text'   => "Nächste Seite",
           );
-
-          echo paginate_links( $args );
-
-          ?>
-
-        <?php
-          } 
-        ?>
-
-        </div>
+        echo paginate_links( $args );
+      ?>
+    </div> <!-- end of .button-container-page -->
       
-    </div>
+  </div> <!-- end of .container .blog-section -->
   </section>
 
 <?php get_footer(); ?>
