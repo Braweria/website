@@ -436,7 +436,7 @@ HEADER NAVIGATION
   padding: 20px;
 }
 
-.navbar .menu ul a.active-link {
+.navbar .menu .current-menu-item a {
   color: var(--light-red);
   text-transform: uppercase;
 }
