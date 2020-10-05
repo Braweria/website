@@ -40,9 +40,10 @@ function braweria_wp_comment_pagination() {
 function braweria_menus() {
   register_nav_menus(
     array(
-      'header-menu' => __( 'Header Menu' ),
-      'footer-menu' => __( 'Footer Menu' ),
-      'context-menu' => __('Context Menu')
+      'header-menu'   => __( 'Header Menu' ),
+      'footer-menu'   => __( 'Footer Menu' ),
+      'context-menu'  => __('Context Menu'),
+      'social-menu'   => __('Social Menu')
      )
    );
  }
