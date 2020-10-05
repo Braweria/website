@@ -20,16 +20,15 @@
       <div class="logo">
         <a href="#"><img alt="Braweria Logo" src="<?php echo $upload_dir['baseurl']; ?>/Braweria-Logo-White.svg" /></a>
       </div>
-      <div class="menu">
+      
+      <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'header-menu',
+            'container_class' => 'menu'
+          )
+        );
+      ?>
 
-        <ul>
-          <li><a href="#" class="active-link">Home</a></li>
-          <li><a href="#">Projekte</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">GitHub Pages</a></li>
-        </ul>
-
-      </div>
     </nav>
   </header>

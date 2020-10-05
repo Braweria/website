@@ -1,27 +1,33 @@
 <div>
     <nav class="navbar-mobile">
       <div class="current-page"><button id="open-main-menu" aria-expanded="false" aria-label="open-main-menu">Startseite</button>
-        <ul class="drop-menu" id="main-menu">
-          <li><a href="#">Startseite</a></li>
-          <li><a href="#">Projekte</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <hr>
-          <li><a href="#">GitHub Pages <i class="fas fa-external-link-alt"></i></a></li>
-        </ul>
+
+        <?php
+          wp_nav_menu(
+            array(
+              'theme_location'  => 'header-menu',
+              'container'       => '',
+              'menu_class' => 'drop-menu',
+              'menu_id'    => 'main-menu'
+            )
+          );
+        ?>
+
       </div>
       <div class="context-menu">
         <button id="open-context-menu" aria-expanded="false" aria-label="open-context-menu" class="context-menu-btn"><i class="fas fa-ellipsis-v"></i></button>
-        <ul class="drop-menu" id="context-menu">
-          <li><a href="mailto:w.mielcarek@braweria.de">E-Mail schreiben</a></li>
-          <li><a href="https://twitter.com/Braweria">Twitter</a></li>
-          <li><a href="https://www.behance.net/braweria">Behance</a></li>
-          <li><a href="https://github.com/Braweria">GitHub</a></li>
-          <li><a href="https://www.reddit.com/user/braweria">Reddit</a></li>
-          <hr>
-          <li><a href="#">Datenschutz</a></li>
-          <li><a href="#">Impressum</a></li>
-        </ul>
+        
+        <?php
+          wp_nav_menu(
+            array(
+              'theme_location'  => 'context-menu',
+              'container'       => '',
+              'menu_class' => 'drop-menu',
+              'menu_id'    => 'context-menu'
+            )
+          );
+        ?>
+        
       </div>
     </nav>
   </div>
@@ -54,12 +60,16 @@
         <span>© <span class="current-year">2020</span> Wiktoria Mielcarek</span>
       </div>
       <img src="<?php echo $upload_dir['baseurl']; ?>/Braweria-Pfote-Weiss.svg" class="paw" alt="Pfote Icon">
-      <nav>
-        <ul>
-          <li><a href="#">Impressum</a></li>
-          <li><a href="#">Datenschutz</a></li>
-        </ul>
-      </nav>
+      
+      <?php
+          wp_nav_menu(
+            array(
+              'theme_location'  => 'footer-menu',
+              'container'       => 'nav'
+            )
+          );
+        ?>
+
     </div>
 
   </footer>
