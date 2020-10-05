@@ -41,7 +41,7 @@ function braweria_menus() {
   register_nav_menus(
     array(
       'header-menu' => __( 'Header Menu' ),
-      'mobile-menu' => __( 'Extra Menu' ),
+      'footer-menu' => __( 'Footer Menu' ),
       'context-menu' => __('Context Menu')
      )
    );
