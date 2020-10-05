@@ -37,4 +37,17 @@ function braweria_wp_comment_pagination() {
 }
 
 
+function braweria_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'mobile-menu' => __( 'Extra Menu' ),
+      'context-menu' => __('Context Menu')
+     )
+   );
+ }
+
+ add_action( 'init', 'braweria_menus' );
+
+
 ?>
