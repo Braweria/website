@@ -11,7 +11,8 @@
 
         $args = array(
           'post_type'      => 'post',
-          'paged'          => $currentPage
+          'paged'          => $currentPage,
+          'posts_per_page'          => 10
         );
 
         $wp_query = new WP_Query($args);
