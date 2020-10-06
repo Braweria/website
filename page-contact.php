@@ -5,7 +5,7 @@
       <h2 class="h1">Kontakt</h2>
       <p>Du hast eine Geschäftsanfrage? Schreibe mir eine E-Mail an <a href="mailto:w.mielcarek@braweria.de">w.mielcarek@braweria.de</a> oder fülle das Formular unten aus! 
       Willst du mir lieber nur Hallo sagen und ein bisschen chatten? Dann schicke mir eine Private Nachricht auf meinen Social Media Kanälen.</p>
-      <?php echo do_shortcode('[contact-form-7 id="52" title="kontakt-frontpage"]'); ?>
+      <?php echo do_shortcode('[contact-form-7 id="116" title="kontakt-contact-page"]'); ?>
       <div class="contact-social">
         <a href="https://twitter.com/Braweria"><button aria-label="Zu meinem Twitter wechseln" class="primary"><i class="fab fa-twitter"></i></button></a>
         <a href="https://www.behance.net/braweria"><button aria-label="Zu meinem Behance wechseln" class="primary"><i class="fab fa-behance"></i></button></a>
