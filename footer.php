@@ -1,5 +1,5 @@
 <div>
-    <nav class="navbar-mobile">
+    <nav class="navbar-mobile" aria-label="Mobil Haupt Menü">
       <div class="current-page"><button id="open-main-menu" aria-expanded="false" aria-label="open-main-menu">Startseite</button>
 
         <?php
@@ -14,7 +14,7 @@
         ?>
 
       </div>
-      <div class="context-menu">
+      <div class="context-menu" role="navigation" aria-label="Kontext Menü">
         <button id="open-context-menu" aria-expanded="false" aria-label="open-context-menu" class="context-menu-btn"><i class="fas fa-ellipsis-v"></i></button>
         
         <?php
@@ -51,7 +51,8 @@
             array(
               'theme_location'  => 'social-menu',
               'container'       => '',
-              'menu_class'      => ''
+              'menu_class'      => '',
+              'container_aria_label' => 'Social Media Menü'
             )
           );
         ?>
@@ -71,7 +72,8 @@
             array(
               'theme_location'  => 'footer-menu',
               'container'       => 'nav',
-              'menu_class'      => ''
+              'menu_class'      => '',
+              'container_aria_label' => 'Footer Menü'
             )
           );
         ?>
