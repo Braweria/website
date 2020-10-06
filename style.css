@@ -301,8 +301,8 @@ form {
   margin: 90px auto;
 }
 
-form.wpcf7-form > p,
-form > p {
+form.wpcf7-form>p,
+form>p {
   width: 780px;
   text-align: left;
   margin: 10px 0;
@@ -789,27 +789,28 @@ main {
   display: none;
 }
 
-.depth-1 > .comment-body {
+.depth-1>.comment-body {
   background: var(--creme);
   border-radius: 10px;
   margin-bottom: 60px;
 }
 
-.parent > .comment-body {
+.parent>.comment-body {
   margin-bottom: 20px;
 }
 
-.depth-1 > ol {
+.depth-1>ol {
   margin-left: 150px;
   list-style: none;
 
   border-radius: 10px;
-  background: rgb(230,220,217); /* var(--creme) */
-  background: linear-gradient(180deg, rgba(230,220,217,.3) 0%, rgba(230,220,217,0) 100%);
+  background: rgb(230, 220, 217);
+  /* var(--creme) */
+  background: linear-gradient(180deg, rgba(230, 220, 217, .3) 0%, rgba(230, 220, 217, 0) 100%);
 }
 
-.depth-2 > .comment-body {
- 
+.depth-2>.comment-body {
+
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -847,7 +848,7 @@ main {
 
 .comment-awaiting-moderation {
   grid-area: 2 / 1 / 3 / 3;
-  
+
   padding: 0;
   margin: 0;
 
@@ -894,11 +895,11 @@ main {
 
 
 
-.comment-list > div {
+.comment-list>div {
   margin-top: 50px;
 }
 
-.comment-list > div .fas.fa-chevron-left:before {
+.comment-list>div .fas.fa-chevron-left:before {
   padding: 0 10px 0 0;
 }
 
@@ -1521,15 +1522,17 @@ MEDIA QUERRIES BREAK @ 900 PX
     grid-area: 3 / 1 / 4 / 2;
   }
 
-.comment-content {
-  grid-area: 4 / 1 / 5 / 2;
-}
+  .comment-content {
+    grid-area: 4 / 1 / 5 / 2;
+  }
 
-.depth-1 > ol {
-  margin-left: 0px;
-}
+  .depth-1>ol {
+    margin-left: 0px;
+  }
 
-.reply { grid-area: 5 / 1 / 6 / 2; }
+  .reply {
+    grid-area: 5 / 1 / 6 / 2;
+  }
 
   footer {
     margin-bottom: 70px;
