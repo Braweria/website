@@ -1534,6 +1534,11 @@ MEDIA QUERRIES BREAK @ 900 PX
     grid-area: 5 / 1 / 6 / 2;
   }
 
+  .contact-social {
+    display: flex;
+    flex-direction: row;
+  }
+
   footer {
     margin-bottom: 70px;
   }
