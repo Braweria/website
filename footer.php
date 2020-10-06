@@ -36,7 +36,7 @@
     <div class="container footer-content">
       <div>
         <span>Kleines Über Mich</span>
-        <p>Hey 👋 Mein Name ist Wiktoria und ich bin Web Designerin & Entwicklerin, darauf fokussiert das Web barrierefrei zu gestalten!</p>
+        <p>Hey <img src="https://s.w.org/images/core/emoji/13.0.0/svg/1f44b.svg" alt="👋" class="emoji" role="img" draggable="false" aria-label="Winkende Hand Emoji"> Mein Name ist Wiktoria und ich bin Web Designerin & Entwicklerin, darauf fokussiert das Web barrierefrei zu gestalten!</p>
       </div>
       <div>
         <span>Kontakt Informationen</span>
