@@ -298,7 +298,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 780px;
-  margin: 90px auto;
+  margin: 30px auto;
 }
 
 form.wpcf7-form>p,
