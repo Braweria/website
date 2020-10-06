@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="section-block bg-bb">
+<section class="section-block bg-bb" role="main">
     <div class="container project-section">
       <h2 class="h1">Meine Projekte</h1>
         <div class="projects">

@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
 <div class="hero">
-    <div class="container">
+    <div class="container" role="region" aria-label="Einführung der Webseite">
       <span>Moin, ich bin Wiktoria!</span>
       <h1>Ich erstelle Webseiten die von allen benutzt werden kann.</h1>
       <span>Web Designer & Entwickler.</span>
     </div>
   </div>
 
-  <section class="section-block bg-bb">
+  <section class="section-block bg-bb" role="main">
     <div class="container project-section">
       <h2 class="h1">Meine Projekte</h1>
         <div class="projects">

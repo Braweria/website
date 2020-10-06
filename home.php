@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="section-block bg-bb">
+<section class="section-block bg-bb" role="main">
     <div class="container blog-section">
       <h2 class="h1">Blog Beiträge</h2>
       <div class="blog-posts page">
