@@ -22,7 +22,11 @@ if (has_post_thumbnail( $post->ID ) ): ?>
           <?php
               if (comments_open() ):
                 comments_template('/template-parts/comments.php');
+              else: ?>
 
+                <div class="no-comments"></div>
+
+          <?php
               endif;
            ?>
 
