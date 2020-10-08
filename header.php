@@ -18,7 +18,7 @@
   <header class="navbar">
     <nav class="container" aria-label="Haupt Menü">
       <div class="logo">
-        <a href="#"><img alt="Braweria Logo" src="<?php echo $upload_dir['baseurl']; ?>/Braweria-Logo-White.svg" /></a>
+        <a href="<?php echo get_home_url(); ?>"><img alt="Braweria Logo" src="<?php echo $upload_dir['baseurl']; ?>/Braweria-Logo-White.svg" /></a>
       </div>
       
       <?php
