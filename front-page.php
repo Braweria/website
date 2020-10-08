@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="hero">
+<div class="hero" style="background-image: url('<?php echo get_the_post_thumbnail_url( ); ?>')">
     <div class="container" role="region" aria-label="Einführung der Webseite">
       <span>Moin, ich bin Wiktoria!</span>
       <h1>Ich erstelle Webseiten die von allen benutzt werden kann.</h1>
