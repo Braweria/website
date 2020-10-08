@@ -734,6 +734,10 @@ main {
   margin: 100px auto;
 }
 
+.no-comments {
+  height: 100px;
+}
+
 .post-heading {
   width: 1050px;
 }
