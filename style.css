@@ -451,8 +451,7 @@ HERO SECTION
 
 .hero {
   height: 750px;
-  background: var(--grey);
-  background: url("../assets/img/HeroImage.jpg");
+  background-color: var(--grey);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
