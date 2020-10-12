@@ -8,6 +8,17 @@
 
   <?php wp_head(); ?>
   <?php $upload_dir = wp_upload_dir(); ?>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163799290-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    ga('set', 'anonymizeIp', true);
+    gtag('config', 'UA-163799290-1');
+  </script>
 </head>
 
 <body>
