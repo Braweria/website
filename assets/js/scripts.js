@@ -26,3 +26,9 @@ function clickTest(e) {
     contextMenu.classList.remove("show");
   }
 }
+
+// Print Current Year in Footer Area
+const currentYear = new Date().getFullYear();
+const spanCurrentYear = document.getElementById("get-current-year");
+const getCurrentYear = () => spanCurrentYear.innerHTML = currentYear;
+getCurrentYear();
