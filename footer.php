@@ -1,6 +1,6 @@
 <div>
     <nav class="navbar-mobile" aria-label="Mobil Haupt Menü">
-      <div class="current-page"><button id="open-main-menu" aria-expanded="false" aria-label="open-main-menu">Startseite</button>
+      <div class="current-page"><button id="open-main-menu" aria-expanded="false" aria-label="open-main-menu">Menü</button>
 
         <?php
           wp_nav_menu(
