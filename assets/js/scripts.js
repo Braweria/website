@@ -1,3 +1,4 @@
+// Give functions to navigation bar
 const btnMainMenu = document.getElementById("open-main-menu");
 const mainMenu = document.getElementById("main-menu");
 
