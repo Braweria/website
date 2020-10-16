@@ -63,7 +63,7 @@
       <div>
       <?php $upload_dir = wp_upload_dir(); ?>
         <img src="<?php echo $upload_dir['baseurl']; ?>/Braweria-Logo-White.svg" alt="Braweria Logo">
-        <span>© <span class="current-year">2020</span> Wiktoria Mielcarek</span>
+        <span>© <span id="get-current-year">2020</span> Wiktoria Mielcarek</span>
       </div>
       <img src="<?php echo $upload_dir['baseurl']; ?>/Braweria-Pfote-Weiss.svg" class="paw" alt="Pfote Icon">
       
