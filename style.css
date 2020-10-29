@@ -810,6 +810,18 @@ main {
   overflow: hidden;
 }
 
+.post ul,
+.post ol {
+  text-align: left;
+  width: 800px;
+  margin: auto;
+}
+
+.post ul li,
+.post ol li {
+  margin: .85em 0;
+}
+
 /* Comment Section */
 
 .comments {
