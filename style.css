@@ -762,13 +762,16 @@ main {
   font-size: 1.1em;
 }
 
-.post figure {
+.post figure,
+.post iframe {
   margin: 15px auto;
 }
 
 .post figure table {
   text-align: left;
   margin: auto;
+  min-width: 800px;
+  border-spacing: 0;
 }
 
 .post figure table thead th {
@@ -786,11 +789,15 @@ main {
 }
 
 .post figure table thead tr th {
-  background: var(--light-red);
+  background: var(--brand-black);
 }
 
 .post figure table strong {
   color: var(--brand-black);
+}
+
+.post figure table thead strong {
+  color: white;
 }
 
 .post figure table thead tr th:nth-last-child(1) {
