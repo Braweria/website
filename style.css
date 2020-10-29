@@ -1193,8 +1193,16 @@ MEDIA QUERRIES BREAK @ 1700 PX
     width: auto;
   }
 
-  .post p {
-    margin-right: 20%;
+  .post figure {
+    max-width: 100%;
+  }
+
+  .post figure img {
+    width: 100%;
+  }
+
+  .post figure table {
+    min-width: 100%;
   }
 
   .author-comment-body p {
@@ -1228,7 +1236,7 @@ MEDIA QUERRIES BREAK @ 1200 PX
   }
 
   .post p {
-    margin-right: 0;
+    width: 100%;
   }
 
   .author-comment-body p {
