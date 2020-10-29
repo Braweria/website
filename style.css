@@ -727,6 +727,8 @@ main {
   border-radius: 10px;
   padding: 65px 130px;
   z-index: 5;
+
+  text-align: center;
 }
 
 .post.page {
@@ -738,19 +740,86 @@ main {
 }
 
 .post-heading {
-  width: 1050px;
+  margin: auto;
+  width: 800px;
+  margin-bottom: 25px;
+
+  text-align: left;
 }
 
 .post p {
-  margin-right: 40%;
+  margin: auto;
+  width: 800px;
+
+  text-align: left;
 }
 
-.post p:nth-of-type(1) {
+.post p.intro {
   font-style: italic;
   color: #67605e;
   font-weight: 500;
-  line-height: 1.5em;
-  font-size: 20px;
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+
+.post figure,
+.post iframe {
+  margin: 15px auto;
+}
+
+.post figure table {
+  text-align: left;
+  margin: auto;
+  min-width: 800px;
+  border-spacing: 0;
+}
+
+.post figure table thead th {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.post figure table tbody tr:nth-of-type(odd) {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.post figure table td {
+  padding: 10px 15px;
+  color: var(--brand-black);
+}
+
+.post figure table thead tr th {
+  background: var(--brand-black);
+}
+
+.post figure table strong {
+  color: var(--brand-black);
+}
+
+.post figure table thead strong {
+  color: white;
+}
+
+.post figure table thead tr th:nth-last-child(1) {
+  border-radius: 0 10px 0 0;
+  overflow: hidden;
+}
+
+.post figure table thead tr th:nth-child(1) {
+  border-radius: 10px 0 0 0;
+  overflow: hidden;
+}
+
+.post ul,
+.post ol {
+  text-align: left;
+  width: 800px;
+  margin: auto;
+}
+
+.post ul li,
+.post ol li {
+  margin: .85em 0;
 }
 
 /* Comment Section */
@@ -1136,8 +1205,16 @@ MEDIA QUERRIES BREAK @ 1700 PX
     width: auto;
   }
 
-  .post p {
-    margin-right: 20%;
+  .post figure {
+    max-width: 100%;
+  }
+
+  .post figure img {
+    width: 100%;
+  }
+
+  .post figure table {
+    min-width: 100%;
   }
 
   .author-comment-body p {
@@ -1171,7 +1248,7 @@ MEDIA QUERRIES BREAK @ 1200 PX
   }
 
   .post p {
-    margin-right: 0;
+    width: 100%;
   }
 
   .author-comment-body p {
