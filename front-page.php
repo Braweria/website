@@ -113,10 +113,10 @@ while ( $loop->have_posts() ) {
         <div class="my-skills-cell">
           <h3>Frameworks & Libraries</h3>
           <div class="skills-list">
-            <div class="skill-item">
-              <img src="<?php echo $upload_dir['baseurl']; ?>/React.svg" alt="React Logo">
+            <!-- <div class="skill-item">
+              <img src="<?php /*echo $upload_dir['baseurl']; */ ?>/React.svg" alt="React Logo">
               <span>React</span>
-            </div>
+            </div> -->
             <div class="skill-item">
               <img src="<?php echo $upload_dir['baseurl']; ?>/WordPress.svg" alt="WordPress Logo">
               <span>WordPress</span>
