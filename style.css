@@ -664,11 +664,13 @@ MY SKILLS
 .my-skills-cell {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .my-skills-cell h3 {
   width: 100%;
   text-align: center;
+  height: 80px;
 }
 
 .skills-list {
@@ -686,7 +688,7 @@ MY SKILLS
   flex-direction: column;
   margin: 20px 20px;
   text-align: center;
-  width: 23%;
+  
 }
 
 .skill-item img {
@@ -1273,6 +1275,15 @@ MEDIA QUERRIES BREAK @ 1200 PX
   .comment-pagination a {
     flex: 1;
   }
+
+  .my-skills-table {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    padding: 0px;
+  }
 }
 
 /* ------------------------
@@ -1576,15 +1587,6 @@ MEDIA QUERRIES BREAK @ 900 PX
 
   .blog-post-item a {
     padding: 30px;
-  }
-
-  .my-skills-table {
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: 1fr;
-  }
-
-  .skills-list {
-    padding: 0px;
   }
 
   .comment-body {
