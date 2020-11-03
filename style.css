@@ -1215,6 +1215,11 @@ MEDIA QUERRIES BREAK @ 1700 PX
 
   .post figure img {
     width: 100%;
+    height: auto;
+  }
+
+  .post figure iframe {
+    width: 100%;
   }
 
   .post figure table {
