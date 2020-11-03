@@ -1198,6 +1198,11 @@ MEDIA QUERRIES BREAK @ 1700 PX
 ------------------------ */
 
 @media (max-width: 1700px) {
+
+  .hero h1 {
+    padding-right: 20%;
+  }
+  
   .container {
     width: 100%;
     padding: 0 50px;
