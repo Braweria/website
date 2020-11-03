@@ -672,11 +672,11 @@ MY SKILLS
 }
 
 .skills-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  
   width: 100%;
   padding: 80px 40px;
 }
@@ -684,8 +684,9 @@ MY SKILLS
 .skill-item {
   display: flex;
   flex-direction: column;
-  /* width: 30%; */
+  margin: 20px 20px;
   text-align: center;
+  width: 23%;
 }
 
 .skill-item img {
