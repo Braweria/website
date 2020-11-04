@@ -620,11 +620,15 @@ BLOG POSTS
 }
 
 .blog-posts {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-row-gap: 20px; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .blog-post-item {
@@ -632,6 +636,9 @@ BLOG POSTS
   background-size: cover;
   border-radius: 10px;
   overflow: hidden;
+
+  flex: 1;
+  margin: 10px;
 }
 
 .blog-post-item a {
@@ -1583,8 +1590,7 @@ MEDIA QUERRIES BREAK @ 900 PX
   }
 
   .blog-posts {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    flex-direction: column;
   }
 
   .blog-post-item {
