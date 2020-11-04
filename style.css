@@ -271,6 +271,7 @@ p {
   padding-bottom: 15px;
   margin-bottom: 1em;
   line-height: 1.7em;
+  font-size: 16px;
 }
 
 /* Button Styling  */
@@ -499,11 +500,10 @@ PROJECTS SECTION
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .projects-page {
@@ -516,12 +516,15 @@ PROJECTS SECTION
 
 .project-item {
   height: 700px;
+  flex: 1;
   border-radius: 10px;
   overflow: hidden;
   background-image: url("../assets/img/project-default-bg.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  margin: 10px;
 }
 
 .project-item a {
@@ -618,11 +621,15 @@ BLOG POSTS
 }
 
 .blog-posts {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-row-gap: 20px; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .blog-post-item {
@@ -630,6 +637,9 @@ BLOG POSTS
   background-size: cover;
   border-radius: 10px;
   overflow: hidden;
+
+  flex: 1;
+  margin: 10px;
 }
 
 .blog-post-item a {
@@ -664,19 +674,21 @@ MY SKILLS
 .my-skills-cell {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .my-skills-cell h3 {
   width: 100%;
   text-align: center;
+  height: 80px;
 }
 
 .skills-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  
   width: 100%;
   padding: 80px 40px;
 }
@@ -684,8 +696,9 @@ MY SKILLS
 .skill-item {
   display: flex;
   flex-direction: column;
-  /* width: 30%; */
+  margin: 20px 20px;
   text-align: center;
+  
 }
 
 .skill-item img {
@@ -756,6 +769,7 @@ main {
   width: 800px;
 
   text-align: left;
+  font-size: 20px;
 }
 
 .post p.intro {
@@ -769,6 +783,22 @@ main {
 .post figure,
 .post iframe {
   margin: 15px auto;
+}
+
+.post figure.youtube-clip {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 3em;
+}
+
+.post figure iframe {
+  width: 100%;
+  height: 100%;
+  z-index: 555;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .post figure table {
@@ -1195,6 +1225,11 @@ MEDIA QUERRIES BREAK @ 1700 PX
 ------------------------ */
 
 @media (max-width: 1700px) {
+
+  .hero h1 {
+    padding-right: 20%;
+  }
+  
   .container {
     width: 100%;
     padding: 0 50px;
@@ -1214,12 +1249,12 @@ MEDIA QUERRIES BREAK @ 1700 PX
   }
 
   .post figure img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
   .post figure iframe {
-    width: 100%;
+    max-width: 100%;
   }
 
   .post figure table {
@@ -1271,6 +1306,15 @@ MEDIA QUERRIES BREAK @ 1200 PX
 
   .comment-pagination a {
     flex: 1;
+  }
+
+  .my-skills-table {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    padding: 0px;
   }
 }
 
@@ -1531,8 +1575,7 @@ MEDIA QUERRIES BREAK @ 900 PX
   }
 
   .projects {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    flex-direction: column;
   }
 
   .projects-page {
@@ -1565,8 +1608,7 @@ MEDIA QUERRIES BREAK @ 900 PX
   }
 
   .blog-posts {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    flex-direction: column;
   }
 
   .blog-post-item {
@@ -1575,15 +1617,6 @@ MEDIA QUERRIES BREAK @ 900 PX
 
   .blog-post-item a {
     padding: 30px;
-  }
-
-  .my-skills-table {
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: 1fr;
-  }
-
-  .skills-list {
-    padding: 0px;
   }
 
   .comment-body {

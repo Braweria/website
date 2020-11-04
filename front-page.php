@@ -45,11 +45,7 @@ while ( $loop->have_posts() ) {
   <section class="section-block bg-lr">
     <div class="container about-me">
       <h2 class="h1">Über Mich</h2>
-      <p>Moin, ich bin Wiktoria! Ich habe Kommunikationsdesign an der HTK in Hamburg studiert. Daraufhin habe ich mich
-        mehr mit Web und UX Design auseinander gesetzt, und mir den Umgang mit Adobe XD, WordPress und Elementor Pro
-        beigebracht. Anschließend habe ich mich noch weitergebildet und HTML und CSS gelernt sowie Online Marketing
-        Tools, wie Funnel Erstellung, Heatmaps, A/B Testing oder Google Ad Kampagnen.</p>
-      <p>Außerdem versuche ich momentan die Ukulele spielen zu lernen.</p>
+      <p>Moin, ich bin Wiktoria! Ich bin gelernte Kommunikationsdesignerin, mein fokus liegt auf Web Design & Entwicklung. Dabei achte ich auf einen SEO freundlichen Aufbau, sowie auf die Barrierefreiheit der Webseite.</p>
     </div>
   </section>
 
@@ -113,10 +109,10 @@ while ( $loop->have_posts() ) {
         <div class="my-skills-cell">
           <h3>Frameworks & Libraries</h3>
           <div class="skills-list">
-            <div class="skill-item">
-              <img src="<?php echo $upload_dir['baseurl']; ?>/React.svg" alt="React Logo">
+            <!-- <div class="skill-item">
+              <img src="<?php /*echo $upload_dir['baseurl']; */ ?>/React.svg" alt="React Logo">
               <span>React</span>
-            </div>
+            </div> -->
             <div class="skill-item">
               <img src="<?php echo $upload_dir['baseurl']; ?>/WordPress.svg" alt="WordPress Logo">
               <span>WordPress</span>
