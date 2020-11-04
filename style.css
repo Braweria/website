@@ -499,11 +499,10 @@ PROJECTS SECTION
 }
 
 .projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .projects-page {
@@ -516,12 +515,15 @@ PROJECTS SECTION
 
 .project-item {
   height: 700px;
+  flex: 1;
   border-radius: 10px;
   overflow: hidden;
   background-image: url("../assets/img/project-default-bg.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  margin: 10px;
 }
 
 .project-item a {
@@ -1548,8 +1550,7 @@ MEDIA QUERRIES BREAK @ 900 PX
   }
 
   .projects {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    flex-direction: column;
   }
 
   .projects-page {
