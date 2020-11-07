@@ -15,9 +15,9 @@ function toggleContextMenu(e) {
 
 btnMainMenu.addEventListener("click", toggleMainMenu)
 btnContextMenu.addEventListener("click", toggleContextMenu)
-document.addEventListener("click", clickTest);
+document.addEventListener("click", closeOpenMenu);
 
-function clickTest(e) {
+function closeOpenMenu(e) {
   console.log(e.target);
   if (e.target !== btnMainMenu) {
     mainMenu.classList.remove("show");
