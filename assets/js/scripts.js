@@ -6,11 +6,15 @@ const btnContextMenu = document.getElementById("open-context-menu");
 const contextMenu = document.getElementById("context-menu");
 
 function toggleMainMenu(e) {
-  mainMenu.classList.toggle("show");
+  mainMenu.classList.add("show");
+  btnMainMenu.setAttribute("aria-expanded", "true");
+  mainMenu.setAttribute("role", "alert");
 }
 
 function toggleContextMenu(e) {
-  contextMenu.classList.toggle("show");
+  contextMenu.classList.add("show");
+  btnContextMenu.setAttribute("aria-expanded", "true");
+  contextMenu.setAttribute("role", "alert");
 }
 
 btnMainMenu.addEventListener("click", toggleMainMenu)
@@ -21,9 +25,13 @@ function closeOpenMenu(e) {
   console.log(e.target);
   if (e.target !== btnMainMenu) {
     mainMenu.classList.remove("show");
+    btnMainMenu.setAttribute("aria-expanded", "false")
+    mainMenu.removeAttribute("role");
   }
   if (e.target !== btnContextMenu) {
     contextMenu.classList.remove("show");
+    btnContextMenu.setAttribute("aria-expanded", "false");
+    contextMenu.removeAttribute("role");
   }
 }
 
